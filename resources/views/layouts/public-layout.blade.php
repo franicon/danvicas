@@ -3,54 +3,41 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    @vite('resources/css/app.css')
     <title>Danvicas</title>
 
     <!-- Fonts -->
     <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Nunito', sans-serif;
-        }
-    </style>
-    @vite('resources/sass/app.scss')
-    @vite('resources/js/app.js')
-    @vite('resources/css/tailwindcs.css')
-
+    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
 <body>
 <nav class="navbar navbar-expand-lg bg-light">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="container-fluid tw-max-w-7xl tw-py-8">
+        <a class=" tw-text-slate-900 tw-no-underline tw-font-black tw-text-2xl " href="/">DANVICAS</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link text-secondary" aria-current="page" href="#">Home</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav tw-text-lg ">
+                <li class="nav-item px-2">
+                    <a class="nav-link active tw-text-slate-900 tw-bg-blue-200 tw-font-bold tw-rounded-lg px-3" aria-current="page" href="#">Home</a>
                 </li>
-                <li class="nav-item">
-                    <a class="" href="#">Link</a>
+                <li class="nav-item px-2">
+                    <a class="nav-link tw-text-slate-900" href="#">Services</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
+                <li class="nav-item px-2">
+                    <a class="nav-link" href="#">Project</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
+                <li class="nav-item px-2">
+                    <a class="nav-link" href="">News</a>
+                </li>
+                <li class="nav-item px-2">
+                    <a class="nav-link" href="">About</a>
+                </li>
+                <li class="nav-item px-2">
+                    <a class="nav-link" href="">Contact</a>
                 </li>
             </ul>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
         </div>
     </div>
 </nav>
