@@ -4,7 +4,8 @@
 
 
 .nav-link {
-    font-weight: 600 !important;
+    font-weight: 500 !important;
+    color: #1a202c !important;
 }
 .active {
     color: #007BFF !important;
