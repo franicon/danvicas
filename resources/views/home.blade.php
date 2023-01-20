@@ -5,5 +5,6 @@
 {{--        Instro Section--}}
         <x-intro-card/>
         <x-recent-project/>
+        <x-services/>
     </div>
 @endsection
