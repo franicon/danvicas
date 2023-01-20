@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .c-border {
-    @apply tw-border tw-border-[1.9px] tw-w-12  tw-my-10 tw-border-blue-500
+    @apply tw-border tw-border-[1.9px] tw-w-12  tw-my-6 tw-border-blue-500
 }
 
 .nav-link {
