@@ -1,5 +1,7 @@
 @extends('layouts.public-layout')
 @section('content')
     <x-banner/>
-    <x-intro-card/>
+    <div class="tw-max-w-7xl mx-auto">
+        <x-intro-card/>
+    </div>
 @endsection
