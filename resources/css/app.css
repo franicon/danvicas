@@ -10,3 +10,15 @@
 .active {
     color: #007BFF !important;
 }
+
+.navbar-toggler {
+    box-shadow: none !important;
+}
+
+
+@media (min-width: 300px ) {
+    .carousel-caption {
+        left: 5% !important;
+        right: 5% !important;
+    }
+}
