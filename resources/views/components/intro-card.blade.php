@@ -1,13 +1,12 @@
 <section>
-    <div class="tw-flex tw-flex-col tw-my-24 justify-content-between align-items-center
-    md:tw-flex-row tw-relative tw-overflow-hidden">
-        <div class="sm:tw-px-10 px-4 md:tw-py-5 tw-text-stone-700 tw-max-w-xl lg:tw-max-w-full">
-            <div class="tw-text-3xl font-bold tw-w-96 tw-content-end tw-font-black">WE ARE EXPERT IN CONSTRUCTION FIELD</div>
+    <div class="tw-flex tw-flex-col tw-my-24 justify-content-between tw-items-center md:tw-flex-row tw-relative">
+        <div class="sm:tw-px-10 px-10 md:tw-py-5 tw-text-stone-700  lg:tw-max-w-lg px-2">
+            <div class="sm:tw-text-3xl tw-text-2xl font-bold md:tw-w-96 tw-content-end tw-font-black">WE ARE EXPERT IN CONSTRUCTION FIELD</div>
             <div class="c-border"></div>
-            <p class=" tw-text-lg lg:tw-text-xl mb-5">Our outfit is well equipped to handle any aspect of Building
+            <p class=" tw-text-[15px] sm:tw-text-[16px] mb-5 ">Our outfit is well equipped to handle any aspect of Building
                 and Civil project(s) from designing to commissioning and has gained
                 appreciable relationship with related partners within and Nigeria.</p>
-            <p class="tw-text-lg lg:tw-text-xl mb-5">
+            <p class="mb-5 tw-text-[15px] sm:tw-text-[16px]">
                 The firm’s optimal approach to meeting client’s satisfactions is out
                 of wide range of experience built up over the years in numerous
                 construction and design services, rendered to individuals,
@@ -15,7 +14,7 @@
         </div>
 {{--        Section Image--}}
         <div class="">
-            <img src="/img/home-intro.png" alt="" class="lg:tw-max-w-xl tw-max-w-lg">
+            <img src="/img/home-intro.png" alt="" class="lg:tw-max-w-xl sm:tw-max-w-lg tw-max-w-full">
         </div>
     </div>
 </section>

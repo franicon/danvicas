@@ -9,7 +9,7 @@
             <img src="./img/banner-2.png" class="sm:tw-flex w-100 tw-hidden" alt="...">
             <img src="./img/sm.jpg" class="w-100 sm:tw-hidden" alt="...">
             <div
-                class="carousel-caption tw-top-40 sm:tw-top-16 md:tw-top-20 tw-top-4
+                class="carousel-caption tw-top-36 sm:tw-top-16 md:tw-top-20
                 lg:tw-top-32 xl:tw-top-64 md:tw-max-w-4xl  tw-max-w-full mx-auto text-light">
                 <div
                     class="xl:tw-text-6xl lg:tw-text-5xl md:tw-text-4xl
