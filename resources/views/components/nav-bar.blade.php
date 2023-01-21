@@ -13,21 +13,21 @@
                     <a class="nav-link tw-text-slate-900 {{Request::is('services') ? 'active': ''}}" href="/services">Services</a>
                 </li>
                 <li class="nav-item px-2">
-                    <a class="nav-link" href="#">Project</a>
+                    <a class="nav-link {{Request::is('projects') ? 'active': ''}}" href="/projects">Projects</a>
                 </li>
                 <li class="nav-item px-2">
-                    <a class="nav-link" href="">News</a>
+                    <a class="nav-link {{Request::is('news') ? 'active': ''}}" href="/news">News</a>
                 </li>
                 <li class="nav-item px-2">
-                    <a class="nav-link" href="">About</a>
+                    <a class="nav-link {{Request::is('about') ? 'active': ''}}" href="/about">About</a>
                 </li>
                 <li class="nav-item px-2">
-                    <a class="nav-link" href="">Contact</a>
+                    <a class="nav-link {{Request::is('contact') ? 'active': ''}}" href="/contact">Contact</a>
                 </li>
             </ul>
-            <form class="d-flex" role="search">
+            <a class="d-flex tw-no-underline tw-text-stone-700 hover:tw-text-stone-900 {{Request::is('quotation') ? 'active': ''}}"  href="/quotation">
                 <button class=" tw-border-[1.5px] tw-border-gray-400 tw-px-8 tw-py-3 hover:tw-border-gray-800 tw-duration-200 tw-mx-auto tw-w-full">Quotation</button>
-            </form>
+            </a>
         </div>
     </div>
 </nav>
