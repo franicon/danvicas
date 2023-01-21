@@ -1,5 +1,5 @@
 <section>
-    <div class="tw-mb-48 px-3">
+    <div class="tw-py-48 px-3">
         <div class="tw-max-w-3xl mx-auto text-center">
             <div class="c-header tw-font-black"> RECENT PROJECT</div>
             <div class="c-border mx-auto"></div>

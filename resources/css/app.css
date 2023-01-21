@@ -12,8 +12,9 @@
     @apply sm:tw-px-2 tw-px-6 md:tw-py-5 lg:tw-max-w-md tw-mx-auto sm:tw-max-w-lg tw-max-w-full
 }
 .service-card {
-    @apply lg:tw-px-10 tw-px-4 tw-py-5 hover:tw-shadow-lg tw-transition-all
-    hover:tw-scale-105 tw-rounded tw-cursor-pointer
+    @apply lg:tw-px-10 tw-px-4 tw-py-8 tw-border-b-8 tw-border-b-white hover:tw-shadow-lg tw-transition
+     hover:tw-scale-110 tw-duration-500 tw-rounded tw-cursor-pointer hover:tw-border-b-8 hover:tw-border-b-blue-600
+    tw-overflow-hidden
 }
 .project-overlay {
     @apply tw-absolute tw-top-10 tw-h-screen tw-left-0 tw-right-0 tw-p-8 tw-px-12 sm:tw-pt-40 tw-pt-20
