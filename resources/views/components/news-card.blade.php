@@ -15,7 +15,9 @@
                 <div class="tw-text-gray-500">January, 21, 2023</div>
                 <div class="tw-text-xl">Adron property on sales</div>
                 <div class="">Adron is currently selling their property located at Lekki...</div>
-                <a href="" class="">Read more</a>
+                <div class="pt-2">
+                    <a href="" class="tw-no-underline">Read more</a>
+                </div>
             </div>
         </div>
         <div class="tw-bg-white hover:tw-shadow-xl tw-transition-all tw-cursor-pointer">
@@ -24,8 +26,9 @@
                 <div class="tw-text-gray-500">January, 21, 2023</div>
                 <div class="tw-text-xl">Adron property on sales</div>
                 <div class="">Adron is currently selling their property located at Lekki...</div>
-                <a href="" class="">Read more</a>
-            </div>
+                <div class="pt-2">
+                    <a href="" class="tw-no-underline">Read more</a>
+                </div>            </div>
         </div>
         <div class="tw-bg-white hover:tw-shadow-xl tw-transition-all tw-cursor-pointer">
             <div class=""><img src="img/post-3.png" alt="" class="tw-max-w-full"></div>
@@ -33,7 +36,9 @@
                 <div class="tw-text-gray-500">January, 21, 2023</div>
                 <div class="tw-text-xl">Adron property on sales</div>
                 <div class="">Adron is currently selling their property located at Lekki...</div>
-                <a href="" class="">Read more</a>
+                <div class="pt-2">
+                    <a href="" class="tw-no-underline">Read more</a>
+                </div>
             </div>
         </div>
     </div>
