@@ -6,5 +6,7 @@
         <x-intro-card/>
         <x-recent-project/>
         <x-services/>
+        <x-news-card/>
+        <x-testimonials/>
     </div>
 @endsection
