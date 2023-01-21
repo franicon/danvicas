@@ -7,10 +7,10 @@
             </div>
         </div>
     </div>
-    <div class="tw-bg-stone-800 tw-p-40 ">
-        <div class="tw-grid tw-grid-cols-4 tw-max-w-6xl mx-auto">
+    <div class="tw-bg-stone-800 lg:tw-p-40 tw-pt-48 px-5 pb-5">
+        <div class="tw-grid tw-grid-cols-1 md:tw-grid-cols-4 lg:tw-max-w-7xl xl:tw-max-w-6xl md:tw-max-w-8xl mx-auto">
             <div class="tw-text-gray-100 tw-font-light">Copyright ©2023 All rights reserved | Davicas Nigeria Limited</div>
-            <div class="tw-text-gray-100 tw-font-light mx-auto ">
+            <div class="tw-text-gray-100 tw-font-light">
                 <div class="tw-text-md">
                     <span class="tw-text-gray-400">  Address: <br></span>
                     34 Street Name, City Name Here, United States</div>
@@ -21,15 +21,15 @@
                     <span class="tw-text-gray-400">Email: </span><br>
                     +1 242 4942 290</div>
             </div>
-            <div class="tw-text-gray-100 tw-font-light mx-auto ">
-                <div class="tw-text-md tw-mt-1">Quick Links</div>
+            <div class="tw-text-gray-100 tw-font-light md:tw-mx-auto ">
+                <div class="tw-text-lg tw-mt-1">Quick Links</div>
                 <div class="tw-text-sm tw-mt-3">About</div>
                 <div class="tw-text-sm tw-mt-3">Service</div>
                 <div class="tw-text-sm tw-mt-3">Project</div>
                 <div class="tw-text-sm tw-mt-3">News</div>
             </div>
-            <div class="tw-text-gray-100 tw-font-light mx-auto ">
-                <div class="tw-text-lg tw-mt-1 text-center mb-2">Social Media</div>
+            <div class="tw-text-gray-100 tw-font-light md:tw-mx-auto ">
+                <div class="tw-text-lg tw-mt-1 md:tw-text-center mb-2">Social Media</div>
                 <div class="tw-flex">
                    <div class="tw-mx-2"> <a href="" class=""><img src="img/linkedin.png" alt="" class="tw-w-8 tw-h-8"></a></div>
                     <div class="tw-mx-2"><a href="" class=""><img src="img/tweeter.png" alt="" class="tw-w-8 tw-h-8"></a></div>
