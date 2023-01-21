@@ -5,7 +5,7 @@
 {{--        Instro Section--}}
         <x-intro-card/>
         <x-recent-project/>
-        <x-services/>
+        <x-services-card/>
         <x-news-card/>
         <x-testimonials/>
     </div>
