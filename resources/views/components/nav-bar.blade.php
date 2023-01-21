@@ -7,11 +7,10 @@
         <div class="collapse navbar-collapse mt-2" id="navbarNav">
             <ul class="navbar-nav tw-text-[15px] mx-auto">
                 <li class="nav-item px-2">
-                    <a class="nav-link active tw-font-bold " aria-current="page" href="#">Home</a>
-                    <div class="lg:tw-border-2 tw-w-4 mx-auto  tw-border-blue-500 rounded"></div>
+                    <a class="{{Request::is('/') ? 'active': ''}} nav-link tw-font-bold " aria-current="page" href="/">Home</a>
                 </li>
                 <li class="nav-item px-2">
-                    <a class="nav-link tw-text-slate-900 " href="#">Services</a>
+                    <a class="nav-link tw-text-slate-900 {{Request::is('services') ? 'active': ''}}" href="/services">Services</a>
                 </li>
                 <li class="nav-item px-2">
                     <a class="nav-link" href="#">Project</a>
