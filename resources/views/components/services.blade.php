@@ -8,7 +8,7 @@
             expedita atque corrupti reiciendis.
         </div>
     </div>
-    <div class="tw-grid tw-gap-4 tw-grid-cols-1 md:tw-grid-cols-3 tw-mt-20 text-center">
+    <div class="tw-grid tw-gap-4 tw-grid-cols-1 md:tw-grid-cols-2 lg:tw-grid-cols-3 tw-mt-20 text-center">
         <div class="tw-px-16 tw-py-5 hover:tw-shadow-sm tw-transition-all hover:tw-scale-105 rounded tw-cursor-pointer">
             <img src="/img/vector.png" alt="" class="tw-w-24 mx-auto tw-mb-4">
             <h1 class="tw-text-2xl">Logistics</h1>

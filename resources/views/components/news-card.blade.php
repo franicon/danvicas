@@ -8,7 +8,7 @@
             expedita atque corrupti reiciendis.
         </div>
     </div>
-    <div class="tw-grid tw-gap-4 md:tw-grid-cols-3 tw-grid-cols-1 tw-my-20">
+    <div class="tw-grid tw-gap-4 lg:tw-grid-cols-3 md:tw-grid-cols-2 tw-grid-cols-1 tw-my-20">
         <div class="tw-bg-white hover:tw-shadow-xl tw-transition-all tw-cursor-pointer">
             <div class=""><img src="img/post-1.png" alt="" class="tw-max-w-full"></div>
             <div class="tw-py-6 tw-px-8">

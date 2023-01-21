@@ -10,7 +10,7 @@
             </div>
             <div class="btn btn-primary px-4 py-2 tw-font-black mt-4">See all Project</div>
         </div>
-        <div class="tw-grid tw-gap-4 md:tw-grid-cols-3 tw-my-20">
+        <div class="tw-grid tw-gap-4 lg:tw-grid-cols-3 md:tw-grid-cols-2  tw-my-20">
             <div class="">
                 <img src="/img/project-1.png" alt="" class="">
             </div>

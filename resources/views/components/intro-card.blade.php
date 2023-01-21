@@ -13,7 +13,7 @@
                 industries, corporate bodies, and government organizations.</p>
         </div>
 {{--        Section Image--}}
-        <div class="">
+        <div class="overflow-hidden">
             <img src="/img/home-intro.png" alt="" class="lg:tw-max-w-xl sm:tw-max-w-lg tw-max-w-full">
         </div>
     </div>
