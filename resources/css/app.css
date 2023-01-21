@@ -5,6 +5,16 @@
 .c-border {
     @apply tw-border tw-border-[1.9px] tw-w-12  tw-my-6 tw-border-blue-500
 }
+.c-header {
+    @apply tw-text-2xl sm:tw-text-3xl
+}
+.c-header-wrapper {
+    @apply sm:tw-px-2 tw-px-6 md:tw-py-5 lg:tw-max-w-md tw-mx-auto sm:tw-max-w-lg tw-max-w-full
+}
+.service-card {
+    @apply lg:tw-px-10 tw-px-4 tw-py-5 hover:tw-shadow-lg tw-transition-all
+    hover:tw-scale-105 tw-rounded tw-cursor-pointer
+}
 
 .nav-link {
     font-weight: 500 !important;
