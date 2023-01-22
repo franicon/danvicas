@@ -1,6 +1,6 @@
 @extends('layouts.public-layout')
 @section('content')
-    <x-banner/>
+    <x-home-banner/>
     <div class="tw-max-w-7xl mx-auto">
 {{--        Instro Section--}}
         <x-intro-card/>
