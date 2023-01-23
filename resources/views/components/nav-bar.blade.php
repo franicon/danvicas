@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid tw-max-w-7xl align-items-center">
-        <a class=" tw-text-slate-900 mt-2 tw-no-underline tw-font-black tw-text-2xl " href="/">DANVICAS</a>
+        <a class=" tw-text-slate-900 mt-2 tw-no-underline tw-font-black md:tw-text-2xl tw-text-lg" href="/">DANVICAS</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>

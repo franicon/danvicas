@@ -2,7 +2,7 @@
 @section('content')
     <x-big-banner>
         <x-slot:head>
-            <div class="tw-text-6xl  ">OUR WORKS IN 15 YEARS </div>
+            <div class="md:tw-text-6xl tw-text-3xl">OUR WORKS IN 15 YEARS </div>
         </x-slot:head>
     </x-big-banner>
     <div class="tw-max-w-7xl mx-auto">

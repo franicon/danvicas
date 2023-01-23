@@ -1,4 +1,4 @@
-    <section class="tw-pt-24  md:tw-space-y-20">
+    <section class="tw-pt-24  tw-space-y-10">
         <div class="d-card service">
             <div class="d-card-text">
                 <div class="tw-text-3xl tw-font-black tw-pb-6">CIVIL</div>

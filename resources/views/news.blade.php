@@ -2,7 +2,7 @@
 @section('content')
     <x-big-banner>
         <x-slot:head>
-            <div class="tw-text-6xl  ">News</div>
+            <div class="md:tw-text-6xl tw-text-4xl">News</div>
         </x-slot:head>
     </x-big-banner>
     <div class="tw-max-w-7xl mx-auto tw-py-16">
