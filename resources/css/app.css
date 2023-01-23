@@ -22,6 +22,10 @@
     hover:tw-opacity-100 tw-bg-opacity-40
 }
 
+.service:nth-child(even) {
+    @apply md:tw-flex-row-reverse
+}
+
 .nav-link {
     font-weight: 500 !important;
     color: #1a202c !important;
