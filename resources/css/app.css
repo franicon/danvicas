@@ -25,6 +25,18 @@
 .service:nth-child(even) {
     @apply md:tw-flex-row-reverse
 }
+.d-card {
+    @apply tw-flex tw-flex-col lg:tw-flex-row tw-justify-between tw-items-center
+}
+.d-card-text {
+    @apply tw-mx-auto tw-px-4 md:tw-px-8 lg:tw-px-8 xl:tw-px-16 tw-mb-6
+}
+.d-card-main-text {
+    @apply md:tw-text-[16px] tw-text-[15px] tw-leading-loose tw-text-justify
+}
+.d-card-img {
+    @apply lg:tw-max-w-lg xl:tw-max-w-xl tw-max-w-full
+}
 
 .nav-link {
     font-weight: 500 !important;
