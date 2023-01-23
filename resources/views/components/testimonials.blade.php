@@ -1,4 +1,4 @@
-<section class="tw-py-24 px-3">
+<section class="tw-pt-10 px-3">
     <div class="tw-max-w-3xl mx-auto text-center">
         <div class="c-header tw-font-black">WHAT OUR CLIENT'S SAY</div>
         <div class="c-border mx-auto"></div>

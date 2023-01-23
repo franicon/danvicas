@@ -11,7 +11,7 @@
             <div class="btn btn-primary px-4 py-2 tw-font-black mt-4">See all Project</div>
         </div>
         <div class="tw-grid tw-gap-0 lg:tw-grid-cols-3 md:tw-grid-cols-2 sm:tw-grid-cols-2  tw-my-20">
-            <div class="tw-relative overflow-hidden tw-cursor-pointer">
+            <div class="tw-relative overflow-hidden tw-cursor-pointer tw-shadow-xl tw-rounded-3xl">
                 <img src="/img/project-1.png" alt="" class="">
                 <div class="project-overlay">
                     <div class="tw-w-full tw-flex tw-flex-col tw-items-center tw-justify-center">
