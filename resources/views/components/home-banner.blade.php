@@ -17,7 +17,7 @@
                     WE ARE LEADING THE WAY
                     CONSTRUCTION WORKS
                 </div>
-                <div class="btn btn-primary px-4 py-2 tw-font-black">Get Started</div>
+                <a class="btn btn-primary px-4 py-2 tw-font-black" href="/services">Our services</a>
             </div>
         </div>
         <div class="carousel-item" data-bs-interval="2000">
@@ -30,7 +30,7 @@
                     WE ARE LEADING THE WAY
                     CONSTRUCTION WORKS
                 </div>
-                <div class="btn btn-primary px-5 py-2 tw-font-black">Get Started</div>
+                <a class="btn btn-primary px-5 py-2 tw-font-black" href="/projects">Get Started</a>
             </div>
         </div>
     </div>
