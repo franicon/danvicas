@@ -16,7 +16,7 @@
                     <a class="nav-link {{Request::is('projects') ? 'active': ''}}" href="/projects">Projects</a>
                 </li>
                 <li class="nav-item px-2">
-                    <a class="nav-link {{Request::is('news') ? 'active': ''}}" href="/news">News</a>
+                    <a class="nav-link {{Request::is('insight') ? 'active': ''}}" href="/insight">insight</a>
                 </li>
                 <li class="nav-item px-2">
                     <a class="nav-link {{Request::is('about') ? 'active': ''}}" href="/about">About</a>

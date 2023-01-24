@@ -15,8 +15,12 @@ Route::get('/projects', function () {
     return view('projects');
 });
 
-Route::get('/news', function () {
-    return view('news');
+Route::get('/project/', function () {
+    return view('project');
+});
+
+Route::get('/insight', function () {
+    return view('insight');
 });
 
 Route::get('/about', function () {

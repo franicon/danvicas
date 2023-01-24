@@ -17,7 +17,7 @@
                     <div class="tw-w-full tw-flex tw-flex-col tw-items-center tw-justify-center">
                         <p class="md:tw-text-xl tw-text-[15px]">Building Construction</p>
                         <div class="tw-cursor-pointer">
-                            <a href="/services"><img src="/img/download.svg" alt="" class="tw-w-10 tw-fill-amber-50"></a>
+                            <a href="/project"><img src="/img/download.svg" alt="" class="tw-w-10 tw-fill-amber-50"></a>
                         </div>
                     </div>
                 </div>
@@ -28,7 +28,7 @@
                     <div class="tw-w-full tw-flex tw-flex-col tw-items-center tw-justify-center">
                         <p class="md:tw-text-xl tw-text-[15px]">Building Construction</p>
                         <div class="tw-cursor-pointer">
-                            <a href="/services"><img src="/img/download.svg" alt="" class="tw-w-10 tw-fill-amber-50"></a>
+                            <a href="/project"><img src="/img/download.svg" alt="" class="tw-w-10 tw-fill-amber-50"></a>
                         </div>
                     </div>
                 </div>
@@ -39,7 +39,7 @@
                     <div class="tw-w-full tw-flex tw-flex-col tw-items-center tw-justify-center">
                         <p class="md:tw-text-xl tw-text-[15px]">Building Construction</p>
                         <div class="tw-cursor-pointer">
-                            <a href="/services"><img src="/img/download.svg" alt="" class="tw-w-10 tw-fill-amber-50"></a>
+                            <a href="/project"><img src="/img/download.svg" alt="" class="tw-w-10 tw-fill-amber-50"></a>
                         </div>
                     </div>
                 </div>

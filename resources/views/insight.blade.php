@@ -2,13 +2,13 @@
 @section('content')
     <x-big-banner>
         <x-slot:head>
-            <div class="md:tw-text-6xl tw-text-4xl">News</div>
+            <div class="md:tw-text-6xl tw-text-4xl">insight</div>
         </x-slot:head>
     </x-big-banner>
     <div class="tw-max-w-7xl mx-auto tw-py-16">
         <article class="tw-mb-24 px-3">
             <div class="tw-max-w-3xl mx-auto text-center">
-                <div class="c-header tw-font-black"> OUR NEWS</div>
+                <div class="c-header tw-font-black"> More insight</div>
                 <div class="c-border mx-auto"></div>
                 <div class="md:tw-text-xl tw-text-[15px] tw-text-gray-500">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.

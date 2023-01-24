@@ -2,7 +2,7 @@
 @section('content')
     <x-big-banner>
         <x-slot:head>
-            <div class="tw-text-6xl  ">GET A QUOTE</div>
+            <div class="md:tw-text-6xl tw-text-4x">GET A QUOTE</div>
         </x-slot:head>
     </x-big-banner>
     <section class="container tw-py-10">
