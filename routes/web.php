@@ -2,6 +2,7 @@
 
 use App\Models\Insight;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\InsightController;
 
@@ -12,13 +13,9 @@ Route::get('/', function () {
 
 Route::get('/services', [ServiceController::class, 'index']);
 
-Route::get('/projects', function () {
-    return view('projects');
-});
+Route::get('/projects', [ProjectController::class, 'index']);
+Route::get('project/{insight:id}', [ProjectController::class, 'show']);
 
-Route::get('/project/', function () {
-    return view('project');
-});
 
 Route::get('/insights', [InsightController::class, 'index'])->name('insights');
 
