@@ -16,7 +16,7 @@
                 <div class="tw-text-xl">Adron property on sales</div>
                 <div class="">Adron is currently selling their property located at Lekki...</div>
                 <div class="pt-2">
-                    <a href="" class="tw-no-underline">Read more</a>
+                    <a href="/insight" class="tw-no-underline">Read more</a>
                 </div>
             </div>
         </div>

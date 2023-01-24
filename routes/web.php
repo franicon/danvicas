@@ -19,7 +19,10 @@ Route::get('/project/', function () {
     return view('project');
 });
 
-Route::get('/insight', function () {
+Route::get('/insights', function () {
+    return view('insights');
+});
+Route::get('/insight/', function () {
     return view('insight');
 });
 
