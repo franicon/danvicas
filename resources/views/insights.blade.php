@@ -7,15 +7,6 @@
     </x-big-banner>
     <div class="tw-max-w-7xl mx-auto tw-py-16">
         <article class="tw-mb-24 px-3">
-            <div class="tw-max-w-3xl mx-auto text-center">
-                <div class="c-header tw-font-black"> More insights</div>
-                <div class="c-border mx-auto"></div>
-                <div class="md:tw-text-xl tw-text-[15px] tw-text-gray-500">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Commodi unde impedit, necessitatibus, soluta sit quam minima
-                    expedita atque corrupti reiciendis.
-                </div>
-            </div>
             <div class="tw-grid tw-gap-4 lg:tw-grid-cols-3 md:tw-grid-cols-2 tw-grid-cols-1 tw-my-20">
                 @foreach($insights as $insight)
                     <div class="tw-bg-white hover:tw-shadow-xl tw-transition-all tw-cursor-pointer tw-my-5">

@@ -2,6 +2,7 @@
 
 use App\Models\Insight;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\InsightController;
 
 
 Route::get('/', function () {
@@ -20,11 +21,7 @@ Route::get('/project/', function () {
     return view('project');
 });
 
-Route::get('/insights', function () {
-    return view('insights', [
-        'insights' => Insight::all()
-    ]);
-});
+Route::get('/insights', [InsightController::class, 'index'])->name('insights');
 
 Route::get('/insight/{insight:slug}', function (Insight $insight) {
     return view('insight', [
