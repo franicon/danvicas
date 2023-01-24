@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Insight;
 use Illuminate\Support\Facades\Route;
 
 
@@ -20,11 +21,14 @@ Route::get('/project/', function () {
 });
 
 Route::get('/insights', function () {
-    return view('insights');
+    return view('insights', [
+        'insights' => Insight::all()
+    ]);
 });
-Route::get('/insight/{insight}', function () {
+
+Route::get('/insight/{insight}', function (Insight $insight) {
     return view('insight', [
-        'insight' => Insight::findOrFail($insight)
+        'insight' => $insight
     ]);
 });
 
