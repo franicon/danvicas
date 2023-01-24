@@ -13,18 +13,8 @@
             </div>
             <div class="tw-px-6 lg:tw-px-0 lg:tw-pr-6">
                 <a href="/insights" class="tw-no-underline tw-text-xl">Back to Insights</a>
-                <div class="tw-text-5xl tw-py-4 tw-font-bold">The era of building a Terrace on main-land</div>
-                <div class=" tw-text-justify lg:tw-max-w-3xl md:tw-text-xl tw-text-[16px]">
-                    Lorem ipsum dolor sit amet consectetur. Arcu eu pellentesque mauris tincidunt
-                    in accumsan. Facilisis non pharetra ante convallis eleifend at molestie elementum
-                    Lorem ipsum dolor sit amet consectetur. Arcu eu pellentesque mauris tincidunt in
-                    accumsan. Facilisis non pharetra ante convallis eleifend at molestie elementum Lorem
-                    ipsum dolor sit amet consectetur. Arcu eu pellentesque mauris tincidunt in accumsan.
-                    Facilisis non pharetra ante convallis eleifend at molestie elementum Lorem ipsum dolor sit.
-                    accumsan. Facilisis non pharetra ante convallis eleifend at molestie elementum Lorem
-                    ipsum dolor sit amet consectetur. Arcu eu pellentesque mauris tincidunt in accumsan.
-                    Facilisis non pharetra ante convallis eleifend at molestie elementum Lorem ipsum dolorsit.
-                </div>
+                <div class="tw-text-5xl tw-py-4 tw-font-bold">{{$insight->title}}</div>
+                <div class=" tw-text-justify lg:tw-max-w-3xl md:tw-text-xl tw-text-[16px]">{{$insight->body}}</div>
                 <div class=" tw-text-justify lg:tw-max-w-3xl md:tw-text-xl tw-text-[16px] py-4">
                     Lorem ipsum dolor sit amet consectetur. Arcu eu pellentesque mauris tincidunt
                     in accumsan. Facilisis non pharetra ante convallis eleifend at molestie elementum

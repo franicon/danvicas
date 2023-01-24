@@ -32,8 +32,8 @@
             <div class="tw-text-gray-100 tw-font-light md:tw-mx-auto ">
                 <div class="tw-text-lg tw-mt-1 md:tw-text-center mb-2">Social Media</div>
                 <div class="tw-flex">
-                   <div class="tw-mx-2"> <a href="" class=""><img src="img/linkedin.png" alt="" class="tw-w-8 tw-h-8"></a></div>
-                    <div class="tw-mx-2"><a href="" class=""><img src="img/tweeter.png" alt="" class="tw-w-8 tw-h-8"></a></div>
+                   <div class="tw-mx-2"> <a href="" class=""><img src="/img/linkedin.png" alt="" class="tw-w-8 tw-h-8"></a></div>
+                    <div class="tw-mx-2"><a href="" class=""><img src="/img/tweeter.png" alt="" class="tw-w-8 tw-h-8"></a></div>
                 </div>
             </div>
         </div>

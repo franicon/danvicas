@@ -26,7 +26,7 @@ Route::get('/insights', function () {
     ]);
 });
 
-Route::get('/insight/{insight}', function (Insight $insight) {
+Route::get('/insight/{insight:slug}', function (Insight $insight) {
     return view('insight', [
         'insight' => $insight
     ]);

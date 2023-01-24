@@ -23,7 +23,7 @@
                         <div class="tw-py-6 md:tw-px-4 tw-px-3">
                             <div class="tw-text-gray-500">January, 21, 2023</div>
                             <div class="tw-text-xl">{{$insight->title}}</div>
-                            <div class="tw-py-3">{{$insight->body}}</div>
+                            <div class="tw-py-2">{{$insight->body}}</div>
                             <div class="pt-2">
                                 <a href="/insight/{{$insight->slug}}" class="tw-no-underline">Read more</a>
                             </div>
