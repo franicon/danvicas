@@ -9,7 +9,7 @@
         <div class="tw-flex lg:tw-flex-row tw-flex-col tw-justify-center lg:tw-items-start tw-items-center">
             <div class="lg:tw-px-6 xl:tw-px-10">
                 <img src="/img/post-1.png" alt="" class="lg:tw-rounded-3xl">
-                <p class="tw-font-semibold tw-pt-3 tw-text-[17px] text-center tw-text-gray-400">Published {{ $insight->created_at }}</p>
+                <p class="tw-font-semibold tw-pt-3 tw-text-[17px] text-center tw-text-gray-400">Published {{ $insight->created_at->diffForHumans() }}</p>
             </div>
             <div class="tw-px-4 lg:tw-px-0 lg:tw-pr-6">
                 <a href="/insights" class="tw-no-underline md:tw-text-xl ">Back to Insights</a>
