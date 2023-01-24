@@ -2,6 +2,7 @@
 
 use App\Models\Insight;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\InsightController;
 
 
@@ -9,9 +10,7 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/services', function () {
-    return view('services');
-});
+Route::get('/services', [ServiceController::class, 'index']);
 
 Route::get('/projects', function () {
     return view('projects');
