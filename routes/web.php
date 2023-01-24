@@ -22,8 +22,10 @@ Route::get('/project/', function () {
 Route::get('/insights', function () {
     return view('insights');
 });
-Route::get('/insight/', function () {
-    return view('insight');
+Route::get('/insight/{insight}', function () {
+    return view('insight', [
+        'insight' => Insight::findOrFail($insight)
+    ]);
 });
 
 Route::get('/about', function () {
