@@ -37,3 +37,9 @@ Route::get('/contact', function () {
 Route::get('/quotation', function () {
     return view('quotation');
 });
+
+
+//Admin
+Route::get('/admin', function () {
+    return view('admin.home');
+});
