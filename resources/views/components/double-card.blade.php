@@ -11,7 +11,7 @@
                 </div>
             </div>
             <div class="">
-                <img src="img/civil.jpg" alt="" class="d-card-img">
+                <img src="img/civil.jpg" alt="" class="d-card-img xl:tw-rounded-3xl tw-shadow-2xl">
             </div>
         </div>
         <div class="d-card service">
@@ -26,7 +26,7 @@
                 </div>
             </div>
             <div class="">
-                <img src="img/building-construction.jpg" alt="" class="d-card-img">
+                <img src="img/building-construction.jpg" alt="" class="d-card-img xl:tw-rounded-3xl tw-shadow-2xl">
             </div>
         </div>
         <div class="d-card service">
@@ -41,7 +41,7 @@
                 </div>
             </div>
             <div class="">
-                <img src="img/design.jpg" alt="" class="d-card-img">
+                <img src="img/design.jpg" alt="" class="d-card-img xl:tw-rounded-3xl tw-shadow-2xl">
             </div>
         </div>
         <div class="d-card service">
@@ -57,7 +57,7 @@
                 </div>
             </div>
             <div class="">
-                <img src="img/facility-managment.jpg" alt="" class="d-card-img">
+                <img src="img/facility-managment.jpg" alt="" class="d-card-img xl:tw-rounded-3xl tw-shadow-2xl">
             </div>
         </div>
     </section>

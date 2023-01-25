@@ -16,6 +16,9 @@
      hover:tw-scale-110 tw-duration-500 tw-rounded tw-cursor-pointer hover:tw-border-b-8 hover:tw-border-b-blue-600
     tw-overflow-hidden
 }
+.service-card-2 {
+    @apply lg:tw-px-10 tw-px-4 tw-py-8 hover:tw-border-stone-800 tw-duration-200 tw-rounded-2xl tw-cursor-pointer tw-overflow-hidden
+}
 .project-overlay {
     @apply tw-absolute tw-top-10 tw-h-screen tw-left-0 tw-right-0 tw-p-8 tw-px-12 sm:tw-pt-40 tw-pt-20
     tw-text-white tw-duration-500  hover:tw-scale-110 tw-scale-90 tw-bg-black tw-opacity-0
@@ -23,7 +26,7 @@
 }
 
 .service:nth-child(even) {
-    @apply md:tw-flex-row-reverse
+    @apply lg:tw-flex-row-reverse
 }
 .d-card {
     @apply tw-flex tw-flex-col lg:tw-flex-row tw-justify-between tw-items-center
