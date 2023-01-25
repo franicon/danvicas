@@ -7,13 +7,13 @@ use Illuminate\Http\Request;
 
 class InsightController extends Controller {
     public function index() {
-        return view('insights', [
+        return view('insight.index', [
             'insights' => Insight::latest()->get()
         ]);
     }
 
     public function show(Insight $insight) {
-        return view('insight', [
+        return view('insight.show', [
             'insight' => $insight
         ]);
     }
