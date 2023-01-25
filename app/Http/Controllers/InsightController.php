@@ -11,4 +11,10 @@ class InsightController extends Controller {
             'insights' => Insight::latest()->get()
         ]);
     }
+
+    public function show(Insight $insight) {
+        return view('insight', [
+            'insight' => $insight
+        ]);
+    }
 }
