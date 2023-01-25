@@ -17,4 +17,8 @@ class InsightController extends Controller {
             'insight' => $insight
         ]);
     }
+
+    public function create() {
+
+    }
 }
