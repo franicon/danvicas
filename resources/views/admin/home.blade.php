@@ -29,7 +29,7 @@
                     <p class="md:tw-text-[16px] tw-text-[14px] ">
                         Add,Update, Delete to Insights page.
                     </p>
-                    <a href="" class="">Edit Insights</a>
+                    <a href="admin/insights/create" class="">Edit Insights</a>
                 </div>
             </div>
         </div>

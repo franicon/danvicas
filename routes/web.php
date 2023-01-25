@@ -21,7 +21,7 @@ Route::get('/projects', [ProjectController::class, 'index']);
 Route::get('project/{insight:id}', [ProjectController::class, 'show']);
 
 // Insights
-Route::get('admin/insights/create', [InsightController::class, 'create']);
+Route::get('admin/insights/create', [InsightController::class, 'create'])->middleware('admin');
 Route::get('/insights', [InsightController::class, 'index'])->name('insights');
 Route::get('/insight/{insight:slug}', [InsightController::class, 'show'])->name('insights');
 
@@ -43,7 +43,7 @@ Route::get('/quotation', function () {
 // Auth
 Route::get('/admin', function () {
     return view('admin.home');
-})->middleware('auth');
+})->middleware('admin');
 
 // Register
 Route::get('/register', [RegisterController::class,'create'])->middleware('guest');
