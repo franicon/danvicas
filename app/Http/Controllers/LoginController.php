@@ -17,7 +17,7 @@ class LoginController extends Controller {
         ]);
 
         if (auth()->attempt($attributes)) {
-            return redirect('/admin')->with('Success', 'Welcome Back');
+            return redirect('/admin')->with('success', 'Welcome Back');
         }
 
         return back()->withErrors(['email' => ' Your provided credentials could not be verified']);
@@ -26,6 +26,6 @@ class LoginController extends Controller {
     public function destroy () {
         auth()->logout();
 
-        return redirect('/')->with('Success', 'You have Log out');
+        return redirect('/')->with('success', 'You have Log out');
     }
 }
