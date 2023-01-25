@@ -2,6 +2,7 @@
 
 use App\Models\Insight;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\InsightController;
@@ -35,7 +36,11 @@ Route::get('/quotation', function () {
 //Admin
 Route::get('/admin', function () {
     return view('admin.home');
-});
+})->middleware('auth');
 
 Route::get('/register', [RegisterController::class,'create'])->middleware('guest');
 Route::post('/register', [RegisterController::class,'store'])->middleware('guest');
+
+Route::get('/login',[LoginController::class, 'create'])->middleware('guest');
+Route::get('/login',[LoginController::class, 'create'])->middleware('guest');
+Route::post('/logout',[LoginController::class, 'destroy'])->middleware('auth');

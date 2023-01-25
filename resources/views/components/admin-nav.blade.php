@@ -19,9 +19,10 @@
                     <a class="nav-link {{Request::is('insights') ? 'active': ''}}" href="/update-insights">insights</a>
                 </li>
             </ul>
-            <a class="d-flex tw-no-underline tw-text-stone-700 hover:tw-text-stone-900 {{Request::is('quotation') ? 'active': ''}}"  href="/quotation">
+            <form class="d-flex tw-no-underline tw-text-stone-700 hover:tw-text-stone-900" method="POST" action="/logout">
+                @csrf
                 <button class=" tw-border-[1.5px] tw-border-gray-400 tw-px-8 tw-py-3 hover:tw-border-gray-800 tw-duration-200 tw-mx-auto tw-w-full">Logout</button>
-            </a>
+            </form>
         </div>
     </div>
 </nav>
