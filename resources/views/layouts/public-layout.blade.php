@@ -15,9 +15,11 @@
     @yield('content')
     <x-footer/>
 @if(session()->has('success'))
-    <div class="alert alert-warning alert-dismissible fade show" role="alert">
-        <p class="">{{session()->get('success')}}  </p>
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    <div class="position-absolute top-0 end-0 mx-5 mt-2">
+        <div class="alert alert-success alert-dismissible fade show pb-0"  role="alert">
+            <p class="">{{session()->get('success')}}  </p>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
     </div>
 @endif
 </body>

@@ -37,5 +37,5 @@ Route::get('/admin', function () {
     return view('admin.home');
 });
 
-Route::get('/register', [RegisterController::class,'create']);
-Route::post('/register', [RegisterController::class,'store']);
+Route::get('/register', [RegisterController::class,'create'])->middleware('guest');
+Route::post('/register', [RegisterController::class,'store'])->middleware('guest');
