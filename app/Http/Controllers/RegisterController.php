@@ -26,6 +26,6 @@ class RegisterController extends Controller {
 
         session()->flash('success', 'Your Account has been created');
 
-        return redirect('/');
+        return redirect('/admin');
     }
 }

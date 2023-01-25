@@ -30,7 +30,7 @@
                         </div>
                     </div>
                     <div class="col-12 mt-4 px-3">
-                        <button type="submit" class="btn btn-primary px-5 py-2">Send Message</button>
+                        <button type="submit" class="btn btn-primary px-5 py-2">Submit</button>
                     </div>
                 </div>
             </form>

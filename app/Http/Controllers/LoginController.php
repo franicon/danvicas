@@ -17,6 +17,7 @@ class LoginController extends Controller {
         ]);
 
         if (auth()->attempt($attributes)) {
+            session()->regenerate();
             return redirect('/admin')->with('success', 'Welcome Back');
         }
 
