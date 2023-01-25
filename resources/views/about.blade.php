@@ -11,7 +11,9 @@
                 <div class="md:tw-text-3xl tw-text-xl tw-font-black tw-pb-6">COMPANY HISTORY</div>
                 <div class="d-card-main-text">
                     <b>Danvicas Nig. Ltd,</b> began under the registered trade name Esteem Renovate & Paint Tech.,
-                    in 2008, incorporated under the laws of Federal Republic of Nigeria.  Over the years,
+                    in 2008, incorporated under the laws of Federal Republic of Nigeria.
+                    <b>DANVICAS NIGERIA LIMITED</b> is a building and Civil Engineering Construction Company,
+                    based in Lagos Nigeria, that specializes in Building, Civil Engineering and Allied field’ design. Over the years,
                     the group has undertaken projects and accumulated skills, know-how and experiences
                     in construction solution, project management services, building trades and related
                     engineering works. However, for purpose of reason(s) the company was rebranded to
