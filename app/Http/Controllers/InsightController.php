@@ -19,6 +19,6 @@ class InsightController extends Controller {
     }
 
     public function create() {
-
+        return view('insight.create');
     }
 }

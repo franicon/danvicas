@@ -13,35 +13,43 @@ Route::get('/', function () {
     return view('home');
 });
 
+// Services
 Route::get('/services', [ServiceController::class, 'index']);
 
+// Projects
 Route::get('/projects', [ProjectController::class, 'index']);
 Route::get('project/{insight:id}', [ProjectController::class, 'show']);
 
+// Insights
 Route::get('admin/insights/create', [InsightController::class, 'create']);
 Route::get('/insights', [InsightController::class, 'index'])->name('insights');
 Route::get('/insight/{insight:slug}', [InsightController::class, 'show'])->name('insights');
 
+// About
 Route::get('/about', function () {
     return view('about');
 });
 
+// Contact
 Route::get('/contact', function () {
     return view('contact');
 });
 
+// Quotation
 Route::get('/quotation', function () {
     return view('quotation');
 });
 
-//Auth
+// Auth
 Route::get('/admin', function () {
     return view('admin.home');
 })->middleware('auth');
 
+// Register
 Route::get('/register', [RegisterController::class,'create'])->middleware('guest');
 Route::post('/register', [RegisterController::class,'store'])->middleware('guest');
 
+// Login
 Route::get('/login',[LoginController::class, 'create'])->name('login')->middleware('guest');
 Route::post('/login',[LoginController::class, 'store'])->middleware('guest');
 Route::post('/logout',[LoginController::class, 'destroy'])->middleware('auth');
