@@ -8,6 +8,7 @@
 
     <!-- Fonts -->
     <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
 <body class="tw-bg-gray-200">
