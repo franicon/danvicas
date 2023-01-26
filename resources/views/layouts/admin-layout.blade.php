@@ -13,7 +13,6 @@
 <body>
 <x-admin-nav/>
 @yield('content')
-<x-footer/>
 @if(session()->has('success'))
     <div class="position-absolute top-0 end-0 mx-5 mt-2">
         <div class="alert alert-success alert-dismissible fade show pb-0"  role="alert">
