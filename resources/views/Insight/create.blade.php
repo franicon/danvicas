@@ -2,7 +2,7 @@
 @section('content')
     <div class=" mx-auto">
         <section class="container tw-py-10">
-            <form class="row justify-content-center g-3 mt-5" method="POST" action="/admin/insights">
+            <form class="row justify-content-center g-3 mt-5" method="POST" action="/admin/insights" enctype="multipart/form-data">
                 @csrf
                 <div class="col-md-6 tw-border-[1.5px] tw-rounded-3xl py-4">
                     <h1 class="text-center py-3 tw-font-bold">Create Insight</h1>
@@ -13,6 +13,10 @@
                             @error('title')
                             <p class="text-danger tw-py-4">{{$message}}</p>
                             @enderror
+                        </div>
+                        <div class="input-group mb-4">
+                            <label class="input-group-text" for="thumbnail">Upload Image</label>
+                            <input type="file" name="thumbnail" class="form-control" id="inputGroupFile01">
                         </div>
                         <div class="form-floating mb-4">
                             <input type="text" name="slug" required class="form-control" id="slug" placeholder="slug">
@@ -30,7 +34,7 @@
                         </div>
                     </div>
                     <div class="col-12 mt-4 px-3">
-                        <button type="submit" class="btn btn-primary px-5 py-2 tw-font-semibold">Publish</button>
+                        <button type="submit" class="btn btn-primary px-5 py-2 tw-font-bold">Publish</button>
                     </div>
                 </div>
             </form>

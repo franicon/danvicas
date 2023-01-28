@@ -24,6 +24,7 @@ class InsightController extends Controller {
     }
 
     public function store() {
+        dd(request()->all());
         $attributes = request()->validate([
             'title' => 'required|min:5',
             'slug' => ['required', Rule::unique('insights', 'slug')],
