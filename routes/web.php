@@ -21,8 +21,9 @@ Route::get('/projects', [ProjectController::class, 'index']);
 Route::get('project/{insight:id}', [ProjectController::class, 'show']);
 
 // Insights
-Route::get('admin/insights/create', [InsightController::class, 'create'])->middleware('admin');
 Route::get('/insights', [InsightController::class, 'index'])->name('insights');
+Route::post('admin/insights', [InsightController::class, 'store'])->middleware('admin');
+Route::get('admin/insights/create', [InsightController::class, 'create'])->middleware('admin');
 Route::get('/insight/{insight:slug}', [InsightController::class, 'show'])->name('insights');
 
 // About

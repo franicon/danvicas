@@ -10,7 +10,7 @@ return new class extends Migration {
         Schema::create('insights', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->string('slug');
+            $table->string('slug')->unique();
             $table->string('body');
             $table->timestamps();
         });
