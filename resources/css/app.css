@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+.thumbnail {
+    height: 400px;
+    width: 500px;
+    background-position: center;
+    background-size: cover;
+}
+
 .c-border {
     @apply tw-border tw-border-[1.9px] tw-w-12  tw-my-6 tw-border-blue-500
 }
@@ -60,3 +67,16 @@
         right: 5% !important;
     }
 }
+
+@media (max-width: 900px ) {
+    .thumbnail {
+        height: 400px;
+        width: 100vw;
+    }
+
+    .big-banner {
+        width: 100vw;
+    }
+}
+
+
