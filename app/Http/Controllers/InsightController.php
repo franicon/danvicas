@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Insight;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Validation\Rule;
 
 class InsightController extends Controller {
@@ -24,12 +25,14 @@ class InsightController extends Controller {
     }
 
     public function store() {
-        dd(request()->all());
         $attributes = request()->validate([
             'title' => 'required|min:5',
+            'thumbnail' => 'required|image',
             'slug' => ['required', Rule::unique('insights', 'slug')],
             'body' => 'required |min:5'
         ]);
+
+        $attributes['thumbnail'] = Storage::disk('public')->putFile('/public/img', request()->file('thumbnail'));
 
         Insight::create($attributes);
 

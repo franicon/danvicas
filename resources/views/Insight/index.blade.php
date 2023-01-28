@@ -10,7 +10,7 @@
             <div class="tw-grid tw-gap-4 lg:tw-grid-cols-3 md:tw-grid-cols-2 tw-grid-cols-1 tw-my-20">
                 @foreach($insights as $insight)
                     <div class="tw-bg-white hover:tw-shadow-xl tw-transition-all tw-cursor-pointer tw-my-5">
-                        <div class=""><img src="img/post-1.png" alt="" class="tw-max-w-full tw-rounded-t-3xl"></div>
+                        <div class=""><img src="/storage/{{$insight->thumbnail}}" alt="" class="tw-max-w-full tw-rounded-t-3xl"></div>
                         <div class="tw-py-6 md:tw-px-4 tw-px-3">
                             <div class="tw-text-gray-500">January, 21, 2023</div>
                             <div class="tw-text-xl">{{$insight->title}}</div>
