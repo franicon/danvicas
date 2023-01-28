@@ -2,7 +2,7 @@
 @section('content')
     <div class=" mx-auto">
         <section class="container tw-py-10">
-            <form class="row justify-content-center g-3 mt-5" method="POST" action="/register">
+            <form class="row justify-content-center g-3 mt-5" method="POST" action="/admin/insights">
                 @csrf
                 <div class="col-md-6 tw-border-[1.5px] tw-rounded-3xl py-4">
                     <h1 class="text-center py-3 tw-font-bold">Create Insight</h1>
