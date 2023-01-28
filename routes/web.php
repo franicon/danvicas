@@ -10,7 +10,9 @@ use App\Http\Controllers\RegisterController;
 
 
 Route::get('/', function () {
-    return view('home');
+    return view('home', [
+        'insights' => Insight::latest()->get()
+    ]);
 });
 
 // Services
