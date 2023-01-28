@@ -7,8 +7,9 @@
     </x-big-banner>
     <div class="tw-max-w-7xl mx-auto tw-py-16">
         <div class="tw-flex lg:tw-flex-row tw-flex-col tw-justify-center lg:tw-items-start tw-items-center">
-            <div class="lg:tw-px-6 xl:tw-px-10">
-                <img src="/storage/{{$insight->thumbnail}}"  alt="" class="lg:tw-rounded-3xl">
+            <div class="lg:tw-px-6 xl:tw-px-10 tw-mx-auto">
+                <div style="background-image:url('/storage/{{$insight->thumbnail}}'); background-size: cover; width: auto; height: 300px"
+                     class="lg:tw-rounded-3xl"></div>
                 <p class="tw-font-semibold tw-pt-3 tw-text-[17px] text-center tw-text-gray-400">Published {{ $insight->created_at->diffForHumans() }}</p>
             </div>
             <div class="tw-px-4 lg:tw-px-0 lg:tw-pr-6">

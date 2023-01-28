@@ -13,7 +13,8 @@
                        @if($insights->count() > 3)
                             @foreach($insights->take(3) as $insight)
                                 <div class="tw-bg-white hover:tw-shadow-xl tw-transition-all tw-cursor-pointer tw-my-5">
-                                    <div class=""><img src="/storage/{{$insight->thumbnail}}" alt="" class="tw-max-w-full tw-rounded-t-3xl"></div>
+                                    <div class="tw-max-w-full tw-rounded-t-3xl"
+                                         style="background-image:url('/storage/{{$insight->thumbnail}}'); background-size: cover; height: 250px;"></div>
                                     <div class="tw-py-6 md:tw-px-3 tw-px-3">
                                         <div class="tw-text-gray-500 mb-3">Published {{ $insight->created_at->diffForHumans() }}</div>
                                         <div class="tw-text-xl">{{$insight->title}}</div>
