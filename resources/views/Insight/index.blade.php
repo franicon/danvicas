@@ -11,10 +11,10 @@
                 @foreach($insights as $insight)
                     <div class="tw-bg-white hover:tw-shadow-xl tw-transition-all tw-cursor-pointer tw-my-5">
                         <div class=""><img src="/storage/{{$insight->thumbnail}}" alt="" class="tw-max-w-full tw-rounded-t-3xl"></div>
-                        <div class="tw-py-6 md:tw-px-4 tw-px-3">
-                            <div class="tw-text-gray-500">January, 21, 2023</div>
+                        <div class="tw-py-6 md:tw-px-3 tw-px-3">
+                            <div class="tw-text-gray-500 mb-3">Published {{ $insight->created_at->diffForHumans() }}</div>
                             <div class="tw-text-xl">{{$insight->title}}</div>
-                            <div class="tw-py-2">{{$insight->body}}</div>
+                            <div class="tw-py-2 tw-text-justify">{{$insight->body}}</div>
                             <div class="pt-2">
                                 <a href="/insight/{{$insight->slug}}" class="tw-no-underline">Read more</a>
                             </div>
