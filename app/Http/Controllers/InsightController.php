@@ -21,7 +21,7 @@ class InsightController extends Controller {
     }
 
     public function create() {
-        return view('insight.create');
+        return view('admin.insights.create');
     }
 
     public function store() {
