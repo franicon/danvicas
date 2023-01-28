@@ -32,7 +32,7 @@
 
                 </div>
             </article>
-            <x-testimonials/>
-        </div>        <x-testimonials/>
+        </div>
+        <x-testimonials/>
     </div>
 @endsection
