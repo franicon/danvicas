@@ -33,4 +33,8 @@ class AdminInsightController extends Controller {
 
         return redirect('/insights');
     }
+
+    public function edit(Insight $insight) {
+        return view('admin.insights.edit', ['insight' => $insight]);
+    }
 }

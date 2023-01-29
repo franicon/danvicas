@@ -4,8 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\Insight;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Storage;
-use Illuminate\Validation\Rule;
 
 class InsightController extends Controller {
     public function index() {

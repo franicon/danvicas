@@ -36,7 +36,7 @@
                                                 <a href="/insight/{{$insight->slug}}" class="tw-no-underline">view</a>
                                             </div>
                                             <div class="pt-2">
-                                                <a href="admin/insights/{{$insight->id}}/edit" class="tw-no-underline">edit</a>
+                                                <a href="/admin/insights/{{$insight->id}}/edit" class="tw-no-underline">edit</a>
                                             </div>
                                         </div>
                                     </div>
