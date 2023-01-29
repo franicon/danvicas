@@ -3,50 +3,46 @@
     <div class=" mx-auto">
         <section class="container tw-py-10">
             <form class="row justify-content-center g-3 mt-5" method="POST" action="/admin/insights" enctype="multipart/form-data">
-                @csrf
                 <div class="col-12">
                     <h3 class="tw-font-bold">Publish New Insight</h3>
                 </div>
                 <hr>
                 <div class="col-md-2">
                     <div class="tw-text-xl tw-mb-6 tw-font-bold">Links</div>
-                    <div class="tw-b-6">
-                        <a class="text-center tw-text-xl tw-no-underline tw-my-6" href="">Dashboard</a>
+                    <div class="tw-pb-3">
+                        <a  class="{{request()->is('admin/insights') ? 'py-2 tw-font-semibold tw-text-[17px] tw-no-underline' : 'tw-no-underline tw-text-[17px]'}}" href="">All Insights</a>
                     </div>
-                    <div class="">
-                        <a class="text-center py-3 tw-text-xl tw-no-underline tw-my-6" href="">Dashboard</a>
+                    <div class="tw-pb-3">
+                        <a  class="{{request()->is('admin/insights/create') ? 'tw-font-semibold tw-text-[17px] py-2 tw-no-underline' : 'tw-no-underline tw-text-[17px]'}}"
+                            href="/admin/insights/create">New Insight</a>
                     </div>
                 </div>
                 <div class="col-md-10 tw-border-[1.5px] tw-rounded-3xl py-4">
                     <div class="px-3">
-                        <div class="form-floating mb-4">
-                            <input type="text" name="title" required class="form-control" id="title" placeholder="title">
-                            <label for="title">Title: E.g - Building Terrace on the Mainland</label>
-                            @error('title')
-                            <p class="text-danger tw-py-4">{{$message}}</p>
-                            @enderror
-                        </div>
-                        <div class="input-group mb-4">
-                            <label class="input-group-text" for="thumbnail">Upload Image</label>
-                            <input type="file" name="thumbnail" class="form-control" id="inputGroupFile01">
-                        </div>
-                        <div class="form-floating mb-4">
-                            <input type="text" name="slug" required class="form-control" id="slug" placeholder="slug">
-                            <label for="slug">Slug: E.g - building-terrace-mainland</label>
-                            @error('slug')
-                            <p class="text-danger tw-py-4">{{$message}}</p>
-                            @enderror
-                        </div>
-                        <div class="form-floating mb-4">
-                            <textarea class="form-control" name="body" placeholder="body" id="body" style="height: 200px"></textarea>
-                            <label for="body">Body</label>
-                            @error('body')
-                            <p class="text-danger tw-py-4">{{$message}}</p>
-                            @enderror
+                        <div class="tw-text-xl mb-4">
+                           All Insights
                         </div>
                     </div>
-                    <div class="col-12 mt-4 px-3">
-                        <button type="submit" class="btn btn-primary px-5 py-2 tw-font-bold">Publish</button>
+                    <div class="row">
+                        @foreach($insights as $insight)
+                            <div class="col-6 col-xl-4 col-md-6">
+                                <div class="tw-border tw-rounded-xl tw-my-3 tw-mx-2">
+                                    <div class="tw-p-3">
+                                        <div class="tw-text-gray-500 mb-3 tw-bg-green-200 tw-text-green-900
+                                        tw-font-black tw-w-10 text-center tw-rounded-xl tw-text-[12px] tw-py-1">live</div>
+                                        <div class="tw-text-md">{{$insight->title}}</div>
+                                        <div class="tw-flex tw-justify-between">
+                                            <div class="pt-2">
+                                                <a href="/insight/{{$insight->slug}}" class="tw-no-underline">view</a>
+                                            </div>
+                                            <div class="pt-2">
+                                                <a href="admin/insights/{{$insight->id}}/edit" class="tw-no-underline">edit</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        @endforeach
                     </div>
                 </div>
             </form>
