@@ -19,23 +19,4 @@ class InsightController extends Controller {
             'insight' => $insight
         ]);
     }
-
-    public function create() {
-        return view('admin.insights.create');
-    }
-
-    public function store() {
-        $attributes = request()->validate([
-            'title' => 'required|min:5',
-            'thumbnail' => 'required|image',
-            'slug' => ['required', Rule::unique('insights', 'slug')],
-            'body' => 'required |min:5'
-        ]);
-
-        $attributes['thumbnail'] = Storage::disk('public')->putFile('/public/img', request()->file('thumbnail'));
-
-        Insight::create($attributes);
-
-        return redirect('/insights');
-    }
 }

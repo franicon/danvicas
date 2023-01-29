@@ -28,8 +28,9 @@ Route::get('/insights', [InsightController::class, 'index'])->name('insights');
 Route::get('/insight/{insight:slug}', [InsightController::class, 'show'])->name('insights');
 
 Route::get('admin/insights', [AdminInsightController::class, 'index'])->middleware('admin');
-Route::post('admin/insights', [InsightController::class, 'store'])->middleware('admin');
-Route::get('admin/insights/create', [InsightController::class, 'create'])->middleware('admin');
+Route::post('admin/insights', [AdminInsightController::class, 'store'])->middleware('admin');
+Route::get('admin/insights/create', [AdminInsightController::class, 'create'])->middleware('admin');
+Route::get('admin/insights/{insight}/edit', [InsightController::class, 'edit'])->middleware('admin');
 
 // About
 Route::get('/about', function () {

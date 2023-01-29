@@ -10,11 +10,12 @@
                 <hr>
                 <div class="col-md-2">
                     <div class="tw-text-xl tw-mb-6 tw-font-bold">Links</div>
-                    <div class="tw-b-6">
-                        <a class="text-center tw-text-xl tw-no-underline tw-my-6" href="">Dashboard</a>
+                    <div class="tw-pb-3">
+                        <a  class="{{request()->is('admin/insights') ? 'py-2 tw-font-semibold tw-text-[17px] tw-no-underline' : 'tw-no-underline tw-text-[17px] tw-text-stone-800'}}" href="/admin/insights">All Insights</a>
                     </div>
-                    <div class="">
-                        <a class="text-center py-3 tw-text-xl tw-no-underline tw-my-6" href="">Dashboard</a>
+                    <div class="tw-pb-3">
+                        <a  class="{{request()->is('admin/insights/create') ? 'tw-font-semibold tw-text-[17px] py-2 tw-no-underline' : 'tw-no-underline tw-text-[17px] tw-text-stone-800'}}"
+                            href="/admin/insights/create">New Insight</a>
                     </div>
                 </div>
                 <div class="col-md-10 tw-border-[1.5px] tw-rounded-3xl py-4">
