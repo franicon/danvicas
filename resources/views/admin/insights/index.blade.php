@@ -31,7 +31,7 @@
                                         <div class="tw-flex tw-justify-between">
                                             <div class="tw-text-gray-500 mb-3 tw-bg-green-200 tw-text-green-900
                                         tw-font-black tw-w-10 text-center tw-rounded-xl tw-text-[12px] tw-py-1">live</div>
-                                            <form method="POST" action="/" class="">
+                                            <form method="POST" action="/admin/insights/{{$insight->id}}" class="">
                                                 @csrf
                                                 @method('DELETE')
                                                 <button class="mb-3 tw-bg-red-300 tw-text-green-100 hover:tw-bg-red-600

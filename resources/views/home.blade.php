@@ -10,7 +10,6 @@
             <article class="tw-mb-24 px-3">
                 <div class="tw-grid tw-gap-4 lg:tw-grid-cols-3 md:tw-grid-cols-2 tw-grid-cols-1 tw-my-20">
                     @if($insights->count())
-                       @if($insights->count() > 3)
                             @foreach($insights->take(3) as $insight)
                                 <div class="tw-bg-white hover:tw-shadow-xl tw-transition-all tw-cursor-pointer tw-my-5">
                                     <div class="tw-max-w-full tw-rounded-t-3xl"
@@ -25,7 +24,6 @@
                                     </div>
                                 </div>
                             @endforeach
-                        @endif
                     @else
                         <p>No Insights yet. Please checkout back Later</p>
                     @endif
