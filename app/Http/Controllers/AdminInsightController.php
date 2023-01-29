@@ -11,7 +11,7 @@ class AdminInsightController extends Controller {
 
     public function index() {
         return view('admin.insights.index', [
-            'insights' => Insight::paginate(50)
+            'insights' => Insight::paginate(3)
         ]);
     }
 
