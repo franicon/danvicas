@@ -46,9 +46,18 @@ class AdminInsightController extends Controller {
             'body' => 'required |min:5'
         ]);
 
-
+        if (isset($attributes['thumbnail'])) {
+            $attributes['thumbnail'] = Storage::disk('public')->putFile('/public/img', request()->file('thumbnail'));
+        }
         $insight->update($attributes);
 
         return back()->with('success', 'Post Updated Successfully');
+    }
+
+    public function destroy(Insight $insight) {
+
+        $insight->delete();
+
+        return back()->with('success', 'Post Deleted Successfully');
     }
 }

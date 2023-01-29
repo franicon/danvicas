@@ -28,8 +28,16 @@
                             <div class="col-6 col-xl-4 col-md-6">
                                 <div class="tw-border tw-rounded-xl tw-my-3 tw-mx-2">
                                     <div class="tw-p-3">
-                                        <div class="tw-text-gray-500 mb-3 tw-bg-green-200 tw-text-green-900
+                                        <div class="tw-flex tw-justify-between">
+                                            <div class="tw-text-gray-500 mb-3 tw-bg-green-200 tw-text-green-900
                                         tw-font-black tw-w-10 text-center tw-rounded-xl tw-text-[12px] tw-py-1">live</div>
+                                            <form method="POST" action="/" class="">
+                                                @csrf
+                                                @method('DELETE')
+                                                <button class="mb-3 tw-bg-red-300 tw-text-green-100 hover:tw-bg-red-600
+                                        tw-font-bold tw-w-16 text-center tw-rounded-xl tw-text-[12px] tw-py-1 tw-cursor-pointer">Delete</button>
+                                            </form>
+                                        </div>
                                         <div class="tw-text-md">{{$insight->title}}</div>
                                         <div class="tw-flex tw-justify-between">
                                             <div class="pt-2">
