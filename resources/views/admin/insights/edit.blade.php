@@ -2,8 +2,9 @@
 @section('content')
     <div class=" mx-auto">
         <section class="container tw-py-10">
-            <form class="row justify-content-center g-3 mt-5" method="POST" action="/admin/insights" enctype="multipart/form-data">
+            <form class="row justify-content-center g-3 mt-5" method="POST" action="/admin/insights/{{ $insight->id }}" enctype="multipart/form-data">
                 @csrf
+                @method('PATCH')
                 <div class="col-12">
                     <h3 class="tw-font-bold">Edit Insight: {{$insight->title}} </h3>
                 </div>
@@ -54,7 +55,7 @@
                         </div>
                     </div>
                     <div class="col-12 mt-4 px-3">
-                        <button type="submit" class="btn btn-primary px-5 py-2 tw-font-bold">Publish</button>
+                        <button type="submit" class="btn btn-primary px-5 py-2 tw-font-bold">Update</button>
                     </div>
                 </div>
             </form>

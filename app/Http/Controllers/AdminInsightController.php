@@ -31,10 +31,24 @@ class AdminInsightController extends Controller {
 
         Insight::create($attributes);
 
-        return redirect('/insights');
+        return redirect('/admin/insights');
     }
 
     public function edit(Insight $insight) {
         return view('admin.insights.edit', ['insight' => $insight]);
+    }
+
+    public function update(Insight $insight) {
+        $attributes = request()->validate([
+            'title' => 'required|min:5',
+            'thumbnail' => 'image',
+            'slug' => ['required', Rule::unique('insights', 'slug')->ignore($insight->id)],
+            'body' => 'required |min:5'
+        ]);
+
+
+        $insight->update($attributes);
+
+        return back()->with('success', 'Post Updated Successfully');
     }
 }
