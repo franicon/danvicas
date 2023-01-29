@@ -7,6 +7,7 @@ use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\InsightController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\AdminInsightController;
 
 
 Route::get('/', function () {
@@ -24,9 +25,11 @@ Route::get('project/{insight:id}', [ProjectController::class, 'show']);
 
 // Insights
 Route::get('/insights', [InsightController::class, 'index'])->name('insights');
+Route::get('/insight/{insight:slug}', [InsightController::class, 'show'])->name('insights');
+
+Route::post('admin/insights', [AdminInsightController::class, 'index'])->middleware('admin');
 Route::post('admin/insights', [InsightController::class, 'store'])->middleware('admin');
 Route::get('admin/insights/create', [InsightController::class, 'create'])->middleware('admin');
-Route::get('/insight/{insight:slug}', [InsightController::class, 'show'])->name('insights');
 
 // About
 Route::get('/about', function () {
