@@ -24,7 +24,8 @@ class AdminInsightController extends Controller {
             'title' => 'required|min:5',
             'thumbnail' => 'required|image',
             'slug' => ['required', Rule::unique('insights', 'slug')],
-            'body' => 'required |min:5'
+            'first_body' => 'required |min:5',
+            'second_body' => 'required |min:5'
         ]);
 
         $attributes['thumbnail'] = Storage::disk('public')->putFile('/public/img', request()->file('thumbnail'));
@@ -43,7 +44,8 @@ class AdminInsightController extends Controller {
             'title' => 'required|min:5',
             'thumbnail' => 'image',
             'slug' => ['required', Rule::unique('insights', 'slug')->ignore($insight->id)],
-            'body' => 'required |min:5'
+            'first_body' => 'required |min:5',
+            'second_body' => 'required |min:5',
         ]);
 
         if (isset($attributes['thumbnail'])) {
