@@ -18,6 +18,10 @@ class AdminServiceController extends Controller {
         return view('admin.services.create');
     }
 
+    public function edit(Service $service) {
+        return view('admin.services.edit', ['service' => $service]);
+    }
+
     public function store() {
         $attributes = request()->validate([
             'title' => 'required',
@@ -30,6 +34,21 @@ class AdminServiceController extends Controller {
         Service::create($attributes);
 
         return redirect('/admin/services')->with('success', 'Service Created successfully');
+    }
+
+    public function update(Service $service) {
+        $attributes = request()->validate([
+            'title' => 'required',
+            'image' => 'image',
+            'body' => 'required'
+        ]);
+
+        if (isset($attributes['image'])) {
+            $attributes['image'] = Storage::disk('public')->putFile('/public/img', request()->file('image'));
+        }
+        $service->update($attributes);
+
+        return back()->with('success', 'Service Updated Successfully');
     }
 
     public function destroy(Service $service) {
