@@ -39,16 +39,9 @@
                             <input type="file" name="thumbnail" class="form-control" id="inputGroupFile01">
                         </div>
                         <div class="form-floating mb-4">
-                            <input type="text" name="slug" required class="form-control" id="slug" placeholder="slug">
-                            <label for="slug">Slug: E.g - building-terrace-mainland</label>
-                            @error('slug')
-                            <p class="text-danger tw-py-4">{{$message}}</p>
-                            @enderror
-                        </div>
-                        <div class="form-floating mb-4">
-                            <textarea class="form-control" name="body" placeholder="body" id="body" style="height: 200px"></textarea>
-                            <label for="body">Description</label>
-                            @error('body')
+                            <textarea class="form-control" name="description" placeholder="description" id="description" style="height: 200px"></textarea>
+                            <label for="description">Description</label>
+                            @error('description')
                             <p class="text-danger tw-py-4">{{$message}}</p>
                             @enderror
                         </div>

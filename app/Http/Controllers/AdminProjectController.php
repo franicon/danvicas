@@ -25,22 +25,30 @@ class AdminProjectController extends Controller {
     public function store() {
         $attributes = request()->validate([
             'title' => 'required',
-            'image' => 'required',
-            'body' => 'required'
+            'category' => 'required',
+            'thumbnail' => 'required',
+            'description' => 'required',
+            'img_1' => 'image',
+            'img_2' => 'image',
         ]);
 
-        $attributes['thumbnail'] = Storage::disk('public')->putFile('/public/img', request()->file('image'));
+        $attributes['thumbnail'] = Storage::disk('public')->putFile('/public/img', request()->file('thumbnail'));
+        $attributes['img_1'] = Storage::disk('public')->putFile('/public/img', request()->file('thumbnail'));
+        $attributes['img_2'] = Storage::disk('public')->putFile('/public/img', request()->file('thumbnail'));
 
-        Service::create($attributes);
+        Project::create($attributes);
 
-        return redirect('/admin/projects')->with('success', 'Service Created successfully');
+        return redirect('/admin/projects')->with('success', 'Project Created successfully');
     }
 
     public function update(Project $project) {
         $attributes = request()->validate([
             'title' => 'required',
-            'image' => 'image',
-            'body' => 'required'
+            'category' => 'required',
+            'thumbnail' => 'required',
+            'description' => 'required',
+            'img_1' => 'image',
+            'img_2' => 'image',
         ]);
 
         if (isset($attributes['image'])) {

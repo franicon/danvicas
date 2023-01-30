@@ -26,7 +26,7 @@
                     <div class="row">
                         @foreach($projects as $project)
                             <!-- Modal -->
-                            <form method="POST" action="/admin/Projects/{{$project->id}}" class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <form method="POST" action="/admin/projects/{{$project->id}}" class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 @csrf
                                 @method('DELETE')
                                 <div class="modal-dialog">
@@ -57,10 +57,10 @@
                                         <div class="tw-text-md">{{$project->title}}</div>
                                         <div class="tw-flex tw-justify-between">
                                             <div class="pt-2">
-                                                <a href="/Project/{{$project->slug}}" class="tw-no-underline">view</a>
+                                                <a href="/project/{{$project->slug}}" class="tw-no-underline">view</a>
                                             </div>
                                             <div class="pt-2">
-                                                <a href="/admin/Projects/{{$project->id}}/edit" class="tw-no-underline">edit</a>
+                                                <a href="/admin/projects/{{$project->id}}/edit" class="tw-no-underline">edit</a>
                                             </div>
                                         </div>
                                     </div>
