@@ -22,6 +22,7 @@
                         </div>
                     </div>
                 @endforeach
+                    <div class="">{{$insights->links()}}</div>
             </div>
         </article>
         <x-testimonials/>

@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class InsightController extends Controller {
     public function index() {
         return view('insight.index', [
-            'insights' => Insight::latest()->get()
+            'insights' => Insight::paginate(6)
         ]);
     }
 
