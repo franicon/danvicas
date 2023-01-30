@@ -12,7 +12,8 @@ return new class extends Migration {
             $table->string('title');
             $table->string('slug')->unique();
             $table->string('thumbnail')->nullable();
-            $table->longText('body');
+            $table->longText('first_body');
+            $table->longText('second_body')->nullable();
             $table->timestamps();
         });
     }
