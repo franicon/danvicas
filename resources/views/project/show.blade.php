@@ -9,7 +9,7 @@
     </x-big-banner>
     <section class="container tw-py-10">
         <div class="mx-auto md:tw-max-w-4xl tw-text-justify">
-            <img src="/storage/{{$project->thumbnail}}" alt="" class="md:tw-max-w-full mx-auto tw-shadow-xl tw-rounded-3xl">
+            <img src="/storage/{{$project->thumbnail}}" alt="" class="md:w-full mx-auto tw-shadow-xl tw-rounded-3xl">
             <div class="md:tw-text-4xl tw-text-[15px] mt-4 tw-font-bold">{{$project->title}}</div>
             <div class="pt-3 md:tw-text-lg tw-text-[15px]">
                {{$project->description}}
