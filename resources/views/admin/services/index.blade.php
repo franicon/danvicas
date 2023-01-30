@@ -67,7 +67,7 @@
                                 </div>
                             </div>
                         @endforeach
-                        <div class="">{{$insights->links()}}</div>
+                        <div class="">{{$services->links()}}</div>
                     </div>
                 </div>
             </div>

@@ -6,7 +6,7 @@
                 @csrf
                 @method('PATCH')
                 <div class="col-12">
-                    <h3 class="tw-font-bold">Edit Insight: {{$insight->title}} </h3>
+                    <h3 class="tw-font-bold">Edit Service: {{$insight->title}} </h3>
                 </div>
                 <hr>
                 <div class="col-md-2">
@@ -40,23 +40,9 @@
                             </div>
                         </div>
                         <div class="form-floating mb-4">
-                            <input type="text"  value="{{$insight->slug}}" name="slug" required class="form-control" id="slug" placeholder="slug">
-                            <label for="slug">Slug: E.g - building-terrace-mainland</label>
-                            @error('slug')
-                            <p class="text-danger tw-py-4">{{$message}}</p>
-                            @enderror
-                        </div>
-                        <div class="form-floating mb-4">
-                            <textarea class="form-control" name="first_body" placeholder="first_body" id="first_body" style="height: 200px">{{$insight->first_body}}</textarea>
-                            <label for="first_body">First Body</label>
-                            @error('first_body')
-                            <p class="text-danger tw-py-4">{{$message}}</p>
-                            @enderror
-                        </div>
-                        <div class="form-floating mb-4">
-                            <textarea class="form-control" name="second_body" placeholder="second_body" id="second_body" style="height: 200px">{{$insight->second_body}}</textarea>
-                            <label for="second_body">Second Body</label>
-                            @error('second_body')
+                            <textarea class="form-control" name="body" placeholder="body" id="body" style="height: 200px">{{$insight->body}}</textarea>
+                            <label for="body">Body</label>
+                            @error('body')
                             <p class="text-danger tw-py-4">{{$message}}</p>
                             @enderror
                         </div>
