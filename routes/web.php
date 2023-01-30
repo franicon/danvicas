@@ -51,8 +51,8 @@ Route::get('admin/insights', [AdminInsightController::class, 'index'])->middlewa
 Route::post('admin/insights', [AdminInsightController::class, 'store'])->middleware('admin');
 Route::get('admin/insights/create', [AdminInsightController::class, 'create'])->middleware('admin');
 Route::patch('admin/insights/{insight:id}', [AdminInsightController::class, 'update'])->middleware('admin');
-Route::get('admin/insights/{insight:id}/edit', [AdminInsightController::class, 'edit'])->middleware('admin');
 Route::delete('admin/insights/{insight:id}', [AdminInsightController::class, 'destroy'])->middleware('admin');
+Route::get('admin/insights/{insight:id}/edit', [AdminInsightController::class, 'edit'])->middleware('admin');
 
 // Register
 Route::get('/register', [RegisterController::class,'create'])->middleware('guest');
