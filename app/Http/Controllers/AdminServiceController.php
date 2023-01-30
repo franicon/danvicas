@@ -29,6 +29,12 @@ class AdminServiceController extends Controller {
 
         Service::create($attributes);
 
-        return back()->with('success', 'Service Created successfully');
+        return redirect('/admin/services')->with('success', 'Service Created successfully');
+    }
+
+    public function destroy(Service $service) {
+        $service->delete();
+
+        return back()->with('success', 'Service Deleted successfully');
     }
 }
