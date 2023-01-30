@@ -14,7 +14,7 @@
         </div>
 {{--        Section Image--}}
         <div class="overflow-hidden">
-            <img src="/img/home-intro.png" alt="" class="lg:tw-max-w-xl sm:tw-max-w-lg tw-max-w-full">
+            <img src="/img/home-intro.png" alt="" class="lg:tw-max-w-xl sm:tw-max-w-lg tw-max-w-full md:tw-rounded-3xl">
         </div>
     </div>
 </section>
