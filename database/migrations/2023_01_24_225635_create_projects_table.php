@@ -10,10 +10,10 @@ return new class extends Migration  {
     {
         Schema::create('projects', function (Blueprint $table) {
             $table->id();
-            $table->text('thumbnail');
-            $table->string('title');
             $table->string('category');
-            $table->string('description');
+            $table->string('title');
+            $table->longText('description');
+            $table->text('thumbnail');
             $table->string('img_1');
             $table->string('img_2');
             $table->timestamps();

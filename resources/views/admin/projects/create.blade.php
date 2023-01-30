@@ -2,20 +2,20 @@
 @section('content')
     <div class=" mx-auto">
         <section class="container tw-py-10">
-            <form class="row justify-content-center g-3 mt-5" method="POST" action="/admin/insights" enctype="multipart/form-data">
+            <form class="row justify-content-center g-3 mt-5" method="POST" action="/admin/projects" enctype="multipart/form-data">
                 @csrf
                 <div class="col-12">
-                    <h3 class="tw-font-bold">Publish New Insight</h3>
+                    <h3 class="tw-font-bold">Publish New Project</h3>
                 </div>
                 <hr>
                 <div class="col-md-2">
                     <div class="tw-text-xl tw-mb-6 tw-font-bold">Links</div>
                     <div class="tw-pb-3">
-                        <a  class="{{request()->is('admin/insights') ? 'py-2 tw-font-semibold tw-text-[17px] tw-no-underline' : 'tw-no-underline tw-text-[17px] tw-text-stone-800'}}" href="/admin/insights">All Insights</a>
+                        <a  class="{{request()->is('admin/projects') ? 'py-2 tw-font-semibold tw-text-[17px] tw-no-underline' : 'tw-no-underline tw-text-[17px] tw-text-stone-800'}}" href="/admin/insights">All Projects</a>
                     </div>
                     <div class="tw-pb-3">
-                        <a  class="{{request()->is('admin/insights/create') ? 'tw-font-semibold tw-text-[17px] py-2 tw-no-underline' : 'tw-no-underline tw-text-[17px] tw-text-stone-800'}}"
-                            href="/admin/insights/create">New Insight</a>
+                        <a  class="{{request()->is('admin/projects/create') ? 'tw-font-semibold tw-text-[17px] py-2 tw-no-underline' : 'tw-no-underline tw-text-[17px] tw-text-stone-800'}}"
+                            href="/admin/insights/create">New Project</a>
                     </div>
                 </div>
                 <div class="col-md-10 tw-border-[1.5px] tw-rounded-3xl py-4">

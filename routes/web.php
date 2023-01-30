@@ -22,7 +22,7 @@ Route::get('/services', [ServiceController::class, 'index']);
 
 // Projects
 Route::get('/projects', [ProjectController::class, 'index']);
-Route::get('project/{insight:id}', [ProjectController::class, 'show']);
+Route::get('project', [ProjectController::class, 'show']);
 
 // Insights
 Route::get('/insights', [InsightController::class, 'index'])->name('insights');

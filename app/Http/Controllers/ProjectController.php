@@ -7,13 +7,13 @@ use Illuminate\Http\Request;
 
 class ProjectController extends Controller {
     public function index() {
-        return view('projects', [
+        return view('project.index', [
             'projects' => Project::all()
         ]);
     }
 
     public function show(Project $project) {
-        return view('project', [
+        return view('project.show', [
             'project' => $project
         ]);
     }
