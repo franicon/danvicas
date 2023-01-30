@@ -9,6 +9,9 @@ return new class extends Migration {
     public function up() {
         Schema::create('services', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
+            $table->string('image');
+            $table->mediumText('body');
             $table->timestamps();
         });
     }
