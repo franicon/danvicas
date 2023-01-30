@@ -13,7 +13,7 @@
             </div>
             <div class="tw-px-4 lg:tw-px-0 lg:tw-pr-6">
                 <a href="/insights" class="tw-no-underline md:tw-text-xl tw-text-gray-800 ">Back to Insights</a>
-                <div class="md:tw-text-5xl  tw-text-2xl tw-py-4 tw-font-bold md:tw-max-w-xl">{{$insight->title}}</div>
+                <div class="md:tw-text-4xl tw-text-2xl tw-py-4 tw-font-bold md:tw-max-w-xl">{{$insight->title}}</div>
                 <div class=" tw-text-justify lg:tw-max-w-3xl md:tw-max-w-xl md:tw-text-xl tw-text-[15px]">{{$insight->first_body}}</div>
                 <div class=" tw-text-justify lg:tw-max-w-3xl md:tw-max-w-xl md:tw-text-xl tw-text-[16px] py-3">{{$insight->second_body}}</div>
             </div>
