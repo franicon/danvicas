@@ -10,13 +10,13 @@
                     <a class="{{Request::is('/') ? 'active': ''}} nav-link tw-font-bold " aria-current="page" href="/">Main-site</a>
                 </li>
                 <li class="nav-item px-2">
-                    <a class="nav-link tw-text-slate-900 {{Request::is('services') ? 'active': ''}}" href="/update-services">Services</a>
+                    <a class="nav-link tw-text-slate-900 {{Request::is('services') ? 'active': ''}}" href="/admin/services">Services</a>
                 </li>
                 <li class="nav-item px-2">
-                    <a class="nav-link {{Request::is('projects') ? 'active': ''}}" href="/update-project">Projects</a>
+                    <a class="nav-link {{Request::is('projects') ? 'active': ''}}" href="/admin/projects">Projects</a>
                 </li>
                 <li class="nav-item px-2">
-                    <a class="nav-link {{Request::is('insights') ? 'active': ''}}" href="/update-insights">insights</a>
+                    <a class="nav-link {{Request::is('insights') ? 'active': ''}}" href="/admin/insights">insights</a>
                 </li>
             </ul>
             <form class="d-flex tw-no-underline tw-text-stone-700 hover:tw-text-stone-900" method="POST" action="/logout">
