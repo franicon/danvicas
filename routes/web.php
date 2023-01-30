@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminServiceController;
 use App\Models\Insight;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
@@ -53,6 +54,15 @@ Route::get('admin/insights/create', [AdminInsightController::class, 'create'])->
 Route::patch('admin/insights/{insight:id}', [AdminInsightController::class, 'update'])->middleware('admin');
 Route::delete('admin/insights/{insight:id}', [AdminInsightController::class, 'destroy'])->middleware('admin');
 Route::get('admin/insights/{insight:id}/edit', [AdminInsightController::class, 'edit'])->middleware('admin');
+
+// Admin Services
+Route::get('admin/services', [AdminServiceController::class, 'index'])->middleware('admin');
+Route::post('admin/services', [AdminServiceController::class, 'store'])->middleware('admin');
+Route::get('admin/services/create', [AdminServiceController::class, 'create'])->middleware('admin');
+Route::patch('admin/services/{service:id}', [AdminServiceController::class, 'update'])->middleware('admin');
+Route::delete('admin/services/{service:id}', [AdminServiceController::class, 'destroy'])->middleware('admin');
+Route::get('admin/services/{service:id}/edit', [AdminServiceController::class, 'edit'])->middleware('admin');
+
 
 // Register
 Route::get('/register', [RegisterController::class,'create'])->middleware('guest');
