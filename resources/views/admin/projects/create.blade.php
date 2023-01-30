@@ -21,8 +21,15 @@
                 <div class="col-md-10 tw-border-[1.5px] tw-rounded-3xl py-4">
                     <div class="px-3">
                         <div class="form-floating mb-4">
+                            <input type="text" name="category" required class="form-control" id="category" placeholder="category">
+                            <label for="category">Category: Construction</label>
+                            @error('category')
+                            <p class="text-danger tw-py-4">{{$message}}</p>
+                            @enderror
+                        </div>
+                        <div class="form-floating mb-4">
                             <input type="text" name="title" required class="form-control" id="title" placeholder="title">
-                            <label for="title">Title: E.g - Building Terrace on the Mainland</label>
+                            <label for="title">Title: House construction for.....</label>
                             @error('title')
                             <p class="text-danger tw-py-4">{{$message}}</p>
                             @enderror
@@ -39,18 +46,19 @@
                             @enderror
                         </div>
                         <div class="form-floating mb-4">
-                            <textarea class="form-control" name="first_body" placeholder="first_body" id="first_body" style="height: 200px"></textarea>
-                            <label for="first_body">First Body</label>
-                            @error('first_body')
+                            <textarea class="form-control" name="body" placeholder="body" id="body" style="height: 200px"></textarea>
+                            <label for="body">Description</label>
+                            @error('body')
                             <p class="text-danger tw-py-4">{{$message}}</p>
                             @enderror
                         </div>
-                        <div class="form-floating mb-4">
-                            <textarea class="form-control" name="second_body" placeholder="second_body" id="second_body" style="height: 200px"></textarea>
-                            <label for="second_body">Second Body</label>
-                            @error('second_body')
-                            <p class="text-danger tw-py-4">{{$message}}</p>
-                            @enderror
+                        <div class="input-group mb-4">
+                            <label class="input-group-text" for="img_1">Upload Image</label>
+                            <input type="file" name="img_1" class="form-control" id="inputGroupFile01">
+                        </div>
+                        <div class="input-group mb-4">
+                            <label class="input-group-text" for="img_2">Upload Image</label>
+                            <input type="file" name="img_2" class="form-control" id="inputGroupFile01">
                         </div>
                     </div>
                     <div class="col-12 mt-4 px-3">
