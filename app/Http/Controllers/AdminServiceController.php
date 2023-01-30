@@ -19,7 +19,7 @@ class AdminServiceController extends Controller {
     }
 
     public function edit(Service $service) {
-        return view('admin.services.edit', ['service' => $service]);
+        return view('admin.services.edit', ['project' => $service]);
     }
 
     public function store() {

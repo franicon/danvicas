@@ -60,9 +60,9 @@ Route::get('admin/insights/{insight:id}/edit', [AdminInsightController::class, '
 Route::get('admin/services', [AdminServiceController::class, 'index'])->middleware('admin');
 Route::post('admin/services', [AdminServiceController::class, 'store'])->middleware('admin');
 Route::get('admin/services/create', [AdminServiceController::class, 'create'])->middleware('admin');
-Route::patch('admin/services/{service:id}', [AdminServiceController::class, 'update'])->middleware('admin');
-Route::delete('admin/services/{service:id}', [AdminServiceController::class, 'destroy'])->middleware('admin');
-Route::get('admin/services/{service:id}/edit', [AdminServiceController::class, 'edit'])->middleware('admin');
+Route::patch('admin/services/{project:id}', [AdminServiceController::class, 'update'])->middleware('admin');
+Route::delete('admin/services/{project:id}', [AdminServiceController::class, 'destroy'])->middleware('admin');
+Route::get('admin/services/{project:id}/edit', [AdminServiceController::class, 'edit'])->middleware('admin');
 
 // Admin Projects
 Route::get('admin/projects', [AdminProjectController::class, 'index'])->middleware('admin');
