@@ -1,6 +1,5 @@
 <?php
 
-use App\Http\Controllers\AdminServiceController;
 use App\Models\Insight;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
@@ -9,6 +8,8 @@ use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\InsightController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\AdminInsightController;
+use App\Http\Controllers\AdminServiceController;
+use App\Http\Controllers\AdminProjectController;
 
 Route::get('/', function () {
     return view('home', [
@@ -62,6 +63,14 @@ Route::get('admin/services/create', [AdminServiceController::class, 'create'])->
 Route::patch('admin/services/{service:id}', [AdminServiceController::class, 'update'])->middleware('admin');
 Route::delete('admin/services/{service:id}', [AdminServiceController::class, 'destroy'])->middleware('admin');
 Route::get('admin/services/{service:id}/edit', [AdminServiceController::class, 'edit'])->middleware('admin');
+
+// Admin Projects
+Route::get('admin/projects', [AdminProjectController::class, 'index'])->middleware('admin');
+Route::post('admin/projects', [AdminProjectController::class, 'store'])->middleware('admin');
+Route::get('admin/projects/create', [AdminProjectController::class, 'create'])->middleware('admin');
+Route::patch('admin/projects/{projects:id}', [AdminProjectController::class, 'update'])->middleware('admin');
+Route::delete('admin/projects/{projects:id}', [AdminProjectController::class, 'destroy'])->middleware('admin');
+Route::get('admin/projects/{projects:id}/edit', [AdminProjectController::class, 'edit'])->middleware('admin');
 
 
 // Register
