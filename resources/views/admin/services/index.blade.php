@@ -2,7 +2,7 @@
 @section('content')
     <div class=" mx-auto">
         <section class="container tw-py-10">
-            <div class="row justify-content-center g-3 mt-5" method="POST" action="/admin/insights" enctype="multipart/form-data">
+            <div class="row justify-content-center g-3 mt-5" method="POST" action="/admin/services" enctype="multipart/form-data">
                 <div class="col-12">
                     <h3 class="tw-font-bold">Publish New Service</h3>
                 </div>
@@ -10,11 +10,11 @@
                 <div class="col-md-2">
                     <div class="tw-text-xl tw-mb-6 tw-font-bold">Links</div>
                     <div class="tw-pb-3">
-                        <a  class="{{request()->is('admin/insights') ? 'py-2 tw-font-semibold tw-text-[17px] tw-no-underline' : 'tw-no-underline tw-text-[17px] tw-text-stone-800'}}" href="">All Services</a>
+                        <a  class="{{request()->is('admin/services') ? 'py-2 tw-font-semibold tw-text-[17px] tw-no-underline' : 'tw-no-underline tw-text-[17px] tw-text-stone-800'}}" href="">All Services</a>
                     </div>
                     <div class="tw-pb-3">
-                        <a  class="{{request()->is('admin/insights/create') ? 'tw-font-semibold tw-text-[17px] py-2 tw-no-underline' : 'tw-no-underline tw-text-[17px] tw-text-stone-800'}}"
-                            href="/admin/insights/create">New Service</a>
+                        <a  class="{{request()->is('admin/services/create') ? 'tw-font-semibold tw-text-[17px] py-2 tw-no-underline' : 'tw-no-underline tw-text-[17px] tw-text-stone-800'}}"
+                            href="/admin/services/create">New Service</a>
                     </div>
                 </div>
                 <div class="col-md-10 tw-border-[1.5px] tw-rounded-3xl py-4">
@@ -24,9 +24,9 @@
                         </div>
                     </div>
                     <div class="row">
-                        @foreach($insights as $insight)
+                        @foreach($services as $service)
                             <!-- Modal -->
-                            <form method="POST" action="/admin/insights/{{$insight->id}}" class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <form method="POST" action="/admin/insights/{{$service->id}}" class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 @csrf
                                 @method('DELETE')
                                 <div class="modal-dialog">
@@ -35,7 +35,7 @@
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
-                                            Are you sure you want to delete <b>{{$insight->title}}</b> ?
+                                            Are you sure you want to delete <b>{{$service->title}}</b> ?
                                         </div>
                                         <div class="modal-footer">
                                             <button type="submit" class="btn btn-success" >Yes</button>
@@ -54,13 +54,13 @@
                                                 tw-w-16 text-center tw-rounded-xl tw-text-[12px] tw-py-1 tw-cursor-pointer"
                                                         data-bs-toggle="modal" data-bs-target="#exampleModal">Delete</div>
                                         </div>
-                                        <div class="tw-text-md">{{$insight->title}}</div>
+                                        <div class="tw-text-md">{{$service->title}}</div>
                                         <div class="tw-flex tw-justify-between">
                                             <div class="pt-2">
-                                                <a href="/insight/{{$insight->slug}}" class="tw-no-underline">view</a>
+                                                <a href="/insight/{{$service->slug}}" class="tw-no-underline">view</a>
                                             </div>
                                             <div class="pt-2">
-                                                <a href="/admin/insights/{{$insight->id}}/edit" class="tw-no-underline">edit</a>
+                                                <a href="/admin/insights/{{$service->id}}/edit" class="tw-no-underline">edit</a>
                                             </div>
                                         </div>
                                     </div>

@@ -19,7 +19,7 @@
                     <p class="md:tw-text-[15px] tw-text-[14px] tw-font-semibold">
                         Add, Update, Delete Projects.
                     </p>
-                    <a href="" class="btn btn-outline-primary">Edit Projects</a>
+                    <a href="admin/services" class="btn btn-outline-primary">Edit Projects</a>
                 </div>
             </div>
             <div class=" md:tw-px-10 tw-my-6 tw-px-3">
