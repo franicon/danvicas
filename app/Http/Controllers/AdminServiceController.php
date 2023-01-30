@@ -48,7 +48,7 @@ class AdminServiceController extends Controller {
         }
         $service->update($attributes);
 
-        return back()->with('success', 'Service Updated Successfully');
+        return redirect('/admin/services')->with('success', 'Service Updated Successfully');
     }
 
     public function destroy(Service $service) {
