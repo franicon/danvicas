@@ -57,7 +57,7 @@
                                         <div class="tw-text-md">{{$project->title}}</div>
                                         <div class="tw-flex tw-justify-between">
                                             <div class="pt-2">
-                                                <a href="/project/{{$project->slug}}" class="tw-no-underline">view</a>
+                                                <a href="/projects/{{$project->id}}" class="tw-no-underline">view</a>
                                             </div>
                                             <div class="pt-2">
                                                 <a href="/admin/projects/{{$project->id}}/edit" class="tw-no-underline">edit</a>

@@ -16,12 +16,10 @@
             </div>
            <div class="tw-grid tw-grid-cols-2 tw-gap-4 mt-5">
                <div class="">
-                   <img src="/storage/{{$project->img_1}}" alt="" class="tw-shadow-xl tw-rounded-3xl">
-
+                   <div style="background-image: url('/storage/{{$project->img_1}}'); background-position: center; background-size:cover; height: 500px;" class="md:tw-max-h-96 tw-rounded-3xl"></div>
                </div>
                <div class="">
-                   <img src="/storage/{{$project->img_2}}" alt="" class="tw-shadow-xl tw-rounded-3xl">
-
+                   <div style="background-image: url('/storage/{{$project->img_2}}'); background-position: center; background-size: cover; height: 500px;" class="tw-max-h-96 tw-rounded-3xl"></div>
                </div>
            </div>
         </div>
