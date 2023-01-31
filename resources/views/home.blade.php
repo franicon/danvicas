@@ -6,6 +6,7 @@
         <x-intro-card/>
         <x-recent-project/>
         <x-services-card/>
+        @if($insights->count() > 1)
         <div class="tw-max-w-7xl mx-auto">
             <article class="tw-mb-24 px-3">
                 <div class="tw-max-w-3xl mx-auto text-center">
@@ -33,13 +34,9 @@
                             @endforeach
                     @endif
                 </div>
-               @if($insights->count() < 1)
-                    <div class="tw-max-w-full mx-auto text-center">
-                        <div class="tw-text-2xl tw-font-bold">No Insights yet. Please checkout back Later</div>
-                    </div>
-                @endif
             </article>
         </div>
+        @endif
         <x-testimonials/>
     </div>
 @endsection

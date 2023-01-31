@@ -3,9 +3,8 @@
         <div class="c-header tw-font-black">WHAT OUR CLIENT'S SAY</div>
         <div class="c-border mx-auto"></div>
         <div class="md:tw-text-xl tw-text-[15px] tw-text-gray-500">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Commodi unde impedit, necessitatibus, soluta sit quam minima
-            expedita atque corrupti reiciendis.
+            We have had numerous great feedback from our clients who have been able to testify to our work, here are the most recent
+            feedback we got from our clients
         </div>
     </div>
     <div class="tw-flex tw-flex-col tw-justify-between tw-items-center md:tw-flex-row tw-max-w-6xl mx-auto">

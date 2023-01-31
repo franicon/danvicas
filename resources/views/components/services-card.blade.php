@@ -3,9 +3,7 @@
         <div class="tw-font-black c-header"> Services</div>
         <div class="c-border mx-auto"></div>
         <div class="md:tw-text-xl tw-text-[15px] tw-text-gray-500">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Commodi unde impedit, necessitatibus, soluta sit quam minima
-            expedita atque corrupti reiciendis.
+            Our services varies from creating design to build, constructions and lot more checkout more details on what we offer.
         </div>
     </div>
     <div class="tw-grid tw-gap-4 tw-grid-cols-1 md:tw-grid-cols-2 lg:tw-grid-cols-3 tw-mt-20 text-center">

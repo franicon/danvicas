@@ -4,9 +4,7 @@
             <div class="c-header tw-font-black"> RECENT PROJECT</div>
             <div class="c-border mx-auto"></div>
             <div class="md:tw-text-xl tw-text-[15px] tw-text-gray-500">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Commodi unde impedit, necessitatibus, soluta sit quam minima
-                expedita atque corrupti reiciendis.
+                We have work on numerous kind of projects from Building to construction, design and projects managements. here are few of our recent projects.
             </div>
             <div class="btn btn-primary px-4 py-2 tw-font-black mt-4">See all Project</div>
         </div>
