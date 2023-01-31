@@ -1,6 +1,7 @@
 <?php
 
 use App\Models\Insight;
+use App\Models\Project;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProjectController;
@@ -13,7 +14,8 @@ use App\Http\Controllers\AdminProjectController;
 
 Route::get('/', function () {
     return view('home', [
-        'insights' => Insight::latest()->get()
+        'projects' => Project::all(),
+        'insights' => Insight::latest()->get(),
     ]);
 });
 
