@@ -12,7 +12,7 @@
                     <div class="md:tw-text-xl tw-text-[15px] tw-text-gray-500">
                         We have work on numerous kind of projects from Building to construction, design and projects managements. here are f
                     </div>
-                    <div class="btn btn-primary px-4 py-2 tw-font-black mt-4">See all Project</div>
+                    <a class="btn btn-primary px-4 py-2 tw-font-black mt-4" href="/projects">See all Project</a>
                 </div>
                 <div class="tw-grid tw-gap-4 lg:tw-grid-cols-3 md:tw-grid-cols-2 sm:tw-grid-cols-2  tw-my-20">
                     @foreach($projects->take(3) as $project)
@@ -51,7 +51,7 @@
                                     <div class="tw-py-6 md:tw-px-3 tw-px-3">
                                         <div class="tw-text-gray-500 mb-3">Published {{ $insight->created_at->diffForHumans() }}</div>
                                         <div class="tw-text-xl">{{$insight->title}}</div>
-                                        <div class="tw-py-2 tw-text-justify">{{ substr(strip_tags($insight->first_body), 0, 150) }}... </div>
+                                        <div class="tw-py-2 tw-text-justify">{{ substr(strip_tags($insight->first_body), 0, 150) }}...</div>
                                         <div class="pt-2">
                                             <a href="/insight/{{$insight->slug}}" class="tw-no-underline">Read more</a>
                                         </div>

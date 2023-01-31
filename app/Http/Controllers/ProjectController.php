@@ -14,7 +14,8 @@ class ProjectController extends Controller {
 
     public function show(Project $project) {
         return view('project.show', [
-            'project' => $project
+            'project' => $project,
+            'projects' => Project::latest()->inRandomOrder()->get()
         ]);
     }
 }
