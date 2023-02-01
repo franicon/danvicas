@@ -4,7 +4,7 @@
         <section class="container tw-py-10">
             <div class="row justify-content-center g-3 mt-5" method="POST" action="/admin/testimonials" enctype="multipart/form-data">
                 <div class="col-12">
-                    <h3 class="tw-font-bold">Publish New Service</h3>
+                    <h3 class="tw-font-bold">Publish New testimonial</h3>
                 </div>
                 <hr>
                 <div class="col-md-2">
@@ -14,7 +14,7 @@
                     </div>
                     <div class="tw-pb-3">
                         <a  class="{{request()->is('admin/testimonials/create') ? 'tw-font-semibold tw-text-[17px] py-2 tw-no-underline' : 'tw-no-underline tw-text-[17px] tw-text-stone-800'}}"
-                            href="/admin/testimonials/create">New Service</a>
+                            href="/admin/testimonials/create">New testimonial</a>
                     </div>
                 </div>
                 <div class="col-md-10 tw-border-[1.5px] tw-rounded-3xl py-4">
@@ -24,9 +24,9 @@
                         </div>
                     </div>
                     <div class="row">
-                        @foreach($testimonials as $service)
+                        @foreach($testimonials as $testimonial)
                             <!-- Modal -->
-                            <form method="POST" action="/admin/testimonials/{{$service->id}}" class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <form method="POST" action="/admin/testimonials/{{$testimonial->id}}" class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 @csrf
                                 @method('DELETE')
                                 <div class="modal-dialog">
@@ -35,7 +35,7 @@
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
-                                            Are you sure you want to delete <b>{{$service->title}}</b> ?
+                                            Are you sure you want to delete <b>{{$testimonial->title}}</b> ?
                                         </div>
                                         <div class="modal-footer">
                                             <button type="submit" class="btn btn-success" >Yes</button>
@@ -54,13 +54,13 @@
                                                 tw-w-16 text-center tw-rounded-xl tw-text-[12px] tw-py-1 tw-cursor-pointer"
                                                         data-bs-toggle="modal" data-bs-target="#exampleModal">Delete</div>
                                         </div>
-                                        <div class="tw-text-md">{{$service->title}}</div>
+                                        <div class="tw-text-md">{{$testimonial->title}}</div>
                                         <div class="tw-flex tw-justify-between">
                                             <div class="pt-2">
                                                 <a href="/testimonials" class="tw-no-underline">view</a>
                                             </div>
                                             <div class="pt-2">
-                                                <a href="/admin/testimonials/{{$service->id}}/edit" class="tw-no-underline">edit</a>
+                                                <a href="/admin/testimonials/{{$testimonial->id}}/edit" class="tw-no-underline">edit</a>
                                             </div>
                                         </div>
                                     </div>
