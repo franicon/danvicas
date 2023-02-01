@@ -1,5 +1,4 @@
 @props(['testimonial'])
-
 <div class="md:tw-my-6 tw-my-8 tw-mx-0 md:tw-mx-10 ">
     <div class="text-center">
         <div style="background-image: url('/storage/{{$testimonial->image}}'); height: 100px; width: 100px; border-radius: 100%; background-position: center; background-size: cover;" alt="" class=" mx-auto mb-3"> </div>

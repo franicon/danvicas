@@ -17,20 +17,21 @@
                     WE ARE LEADING THE WAY
                     CONSTRUCTION WORKS
                 </div>
-                <a class="btn btn-primary px-4 py-2 tw-font-black" href="/services">Our services</a>
+                <a class="btn btn-primary px-5 py-2 tw-font-black" href="/services">View Our Services</a>
             </div>
         </div>
         <div class="carousel-item" data-bs-interval="2000">
             <img src="./img/banner-1.png" class="w-100 sm:tw-flex w-100 tw-hidden" alt="...">
             <img src="./img/sm-2.jpg" class="w-100 sm:tw-hidden" alt="...">
             <div
-                class="carousel-caption tw-top-10 sm:tw-top-16 md:tw-top-20 tw-top-4 lg:tw-top-32 xl:tw-top-64 md:tw-max-w-4xl  tw-max-w-full mx-auto text-light">
+                class="carousel-caption tw-top-36 sm:tw-top-16 md:tw-top-20
+                lg:tw-top-32 xl:tw-top-64 md:tw-max-w-4xl  tw-max-w-full mx-auto text-light">
                 <div
-                    class="xl:tw-text-6xl lg:tw-text-5xl md:tw-text-4xl sm:tw-text-3xl tw-text-xl tw-font-black tw-leading-7 sm:mb-4">
-                    WE ARE LEADING THE WAY
-                    CONSTRUCTION WORKS
+                    class="xl:tw-text-6xl lg:tw-text-5xl md:tw-text-4xl
+                    sm:tw-text-3xl tw-text-xl tw-font-black tw-leading-normal mb-3">
+                    WE ARE EXPERT IN BUILDING AND CONSTRUCTION FIELD
                 </div>
-                <a class="btn btn-primary px-5 py-2 tw-font-black" href="/projects">Get Started</a>
+                <a class="btn btn-primary px-5 py-2 tw-font-black" href="/projects">View Our Projects</a>
             </div>
         </div>
     </div>

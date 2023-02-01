@@ -2,16 +2,17 @@
 @section('content')
     <x-big-banner>
         <x-slot:head>
-            <div class="md:tw-text-6xl tw-text-4x">GET A QUOTE</div>
+            <div class="md:tw-text-6xl tw-text-4xl">GET A QUOTE</div>
         </x-slot:head>
     </x-big-banner>
     <section class="container tw-py-10">
         <form class="row g-3 mt-5 justify-content-center" method="POST" action="/send-email">
             @csrf
+            <div class="md:tw-text-5xl tw-text-4xl tw-py-6 tw-text-center">Send us Your Request</div>
             <div class="col-md-6">
                 <div class="px-3 row">
                     <div class="col-md-6">
-                        <div class="form-floating mb-2">
+                        <div class="form-floating mb-4">
                             <input type="text" name="first_name" class="form-control" id="floatingInput" placeholder="name@example.com">
                             <label for="first_name">First Name</label>
                         </div>
