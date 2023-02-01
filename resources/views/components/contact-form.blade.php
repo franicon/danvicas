@@ -27,7 +27,7 @@
                </div>
                <div class="">
                    <div class="tw-font-bold tw-text-2xl">Email Us At:</div>
-                   <div class="md:tw-text-xl tw-text-md tw-py-2">info@danvicas.com</div>
+                   <div class="md:tw-text-xl tw-text-md tw-py-2">danvicasng@gmail.com | info@danvicas.com</div>
                </div>
                <div class="">
                    <div class="tw-font-bold tw-text-2xl">Contact-us:</div>

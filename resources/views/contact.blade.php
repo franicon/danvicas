@@ -14,8 +14,7 @@
                     <div class="c-header tw-font-black">WHAT OUR CLIENT'S SAY</div>
                     <div class="c-border mx-auto"></div>
                     <div class="md:tw-text-xl tw-text-[15px] tw-text-gray-500">
-                        We have had numerous great feedback from our clients who have been able to testify to our work, here are the most recent
-                        feedback we got from our clients
+                        We have had numerous great feedback from our clients.
                     </div>
                 </div>
                 <div class="tw-grid md:tw-grid-cols-2">
