@@ -35,7 +35,7 @@
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
-                                            Are you sure you want to delete <b>{{$testimonial->title}}</b> ?
+                                            Are you sure you want to delete <b>{{$testimonial->name}}</b> ?
                                         </div>
                                         <div class="modal-footer">
                                             <button type="submit" class="btn btn-success" >Yes</button>
@@ -54,10 +54,10 @@
                                                 tw-w-16 text-center tw-rounded-xl tw-text-[12px] tw-py-1 tw-cursor-pointer"
                                                         data-bs-toggle="modal" data-bs-target="#exampleModal">Delete</div>
                                         </div>
-                                        <div class="tw-text-md">{{$testimonial->title}}</div>
+                                        <div class="tw-text-md">{{$testimonial->name}}</div>
                                         <div class="tw-flex tw-justify-between">
                                             <div class="pt-2">
-                                                <a href="/testimonials" class="tw-no-underline">view</a>
+                                                <a href="/" class="tw-no-underline">view</a>
                                             </div>
                                             <div class="pt-2">
                                                 <a href="/admin/testimonials/{{$testimonial->id}}/edit" class="tw-no-underline">edit</a>
