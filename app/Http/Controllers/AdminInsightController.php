@@ -53,13 +53,13 @@ class AdminInsightController extends Controller {
         }
         $insight->update($attributes);
 
-        return back()->with('success', 'Insight Updated Successfully');
+        return back()->with('success', 'insight Updated Successfully');
     }
 
     public function destroy(Insight $insight) {
 
         $insight->delete();
 
-        return back()->with('success', 'Insight Deleted Successfully');
+        return back()->with('success', 'insight Deleted Successfully');
     }
 }
