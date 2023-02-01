@@ -1,18 +1,19 @@
 <section class="container tw-py-10">
-    <form class="row g-3 mt-5">
+    <form class="row g-3 mt-5" method="POST" action="/contact-email">
+        @csrf
         <div class="col-md-6">
            <div class="px-3">
                <div class="form-floating mb-4">
-                   <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                   <label for="floatingInput">Email address</label>
+                   <input type="email" name="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                   <label for="email">Email address</label>
                </div>
                <div class="form-floating mb-4">
-                   <input type="text" class="form-control" id="floatingPassword" placeholder="company name">
-                   <label for="floatingPassword">Company Name</label>
+                   <input type="text" name="name" class="form-control" id="floatingPassword" placeholder="company name">
+                   <label for="name">Company Name</label>
                </div>
                <div class="form-floating">
-                   <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                   <label for="floatingTextarea2">Message</label>
+                   <textarea class="form-control" name="message" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                   <label for="message">Message</label>
                </div>
            </div>
             <div class="col-12 mt-4 px-3">

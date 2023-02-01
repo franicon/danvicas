@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use App\Models\Insight;
 use App\Models\Project;
 use App\Models\Testimonial;
@@ -101,3 +102,4 @@ Route::post('/logout',[LoginController::class, 'destroy'])->middleware('auth');
 
 // Email
 Route::post('/send-email',QuoteController::class)->name('send.email');
+Route::post('/contact-email',ContactController::class)->name('send.email');
