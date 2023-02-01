@@ -8,7 +8,7 @@
 </head>
 <body>
 <h1>Test EMAIL</h1>
-<p>Name: {{ $data['first_name'] }}</p>
-<p>Name: {{ $data['last_name'] }}</p>
+<p>Name: {{ $mailData['first_name'] }}</p>
+<p>Name: {{ $mailData['last_name'] }}</p>
 </body>
 </html>

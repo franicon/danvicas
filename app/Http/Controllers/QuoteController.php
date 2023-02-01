@@ -10,7 +10,7 @@ class QuoteController extends Controller {
 
     public function __invoke (Request $req) {
 
-        $data = [
+        $mailData = [
             'first_name' => $req->first_name,
             'last_name' => $req->last_name,
             'email' => $req->email,
@@ -20,7 +20,7 @@ class QuoteController extends Controller {
             'about_project' => $req->about_project
         ];
 
-        Mail::to('info@danvicas.com')->send(new QuoteMail);
+        Mail::to( 'yomi.aluko.26@gmail.com')->send(new QuoteMail($mailData));
         return redirect('/home')->with('success', 'Email sent Successfuly');
     }
 }

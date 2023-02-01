@@ -6,7 +6,7 @@
         </x-slot:head>
     </x-big-banner>
     <section class="container tw-py-10">
-        <form class="row g-3 mt-5 justify-content-center" method="POST" action="{{route('send.email')}}">
+        <form class="row g-3 mt-5 justify-content-center" method="POST" action="/send-email">
             @csrf
             <div class="col-md-6">
                 <div class="px-3 row">

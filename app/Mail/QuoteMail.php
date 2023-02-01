@@ -12,8 +12,11 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 class QuoteMail extends Mailable {
     use Queueable, SerializesModels;
 
-    public function __construct() {
-        //
+    public $mailData;
+
+
+    public function __construct($mailData) {
+        $this->mailData = $mailData;
     }
 
 
@@ -30,8 +33,7 @@ class QuoteMail extends Mailable {
         );
     }
 
-    public function build()
-    {
+    public function build() {
         return $this->subject('Test Email')->view('email-quote');
     }
 
