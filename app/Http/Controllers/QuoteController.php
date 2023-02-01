@@ -20,7 +20,7 @@ class QuoteController extends Controller {
             'about_project' => $req->about_project
         ];
 
-        Mail::to( $mailData['email'])->send(new QuoteMail($mailData));
+        Mail::to( 'danvicasng@gmail.com')->cc('info@danvicas.com')->send(new QuoteMail($mailData));
         return redirect('/')->with('success', 'Email sent Successfuly');
     }
 }
