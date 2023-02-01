@@ -2,6 +2,7 @@
 
 use App\Models\Insight;
 use App\Models\Project;
+use App\Models\Testimonial;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\QuoteController;
@@ -16,6 +17,7 @@ use App\Http\Controllers\AdminTestimonialController;
 
 Route::get('/', function () {
     return view('home', [
+        'testimonials' => Testimonial::all(),
         'projects' => Project::all(),
         'insights' => Insight::latest()->get(),
     ]);
