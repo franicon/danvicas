@@ -41,7 +41,9 @@ Route::get('/about', function () {
 
 // Contact
 Route::get('/contact', function () {
-    return view('contact');
+    return view('contact', [
+        'testimonials' => Testimonial::latest()->get()
+    ]);
 });
 
 // Quotation
