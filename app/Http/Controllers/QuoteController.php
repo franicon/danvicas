@@ -21,6 +21,6 @@ class QuoteController extends Controller {
         ];
 
         Mail::to( $mailData['email'])->send(new QuoteMail($mailData));
-        return redirect('/home')->with('success', 'Email sent Successfuly');
+        return redirect('/')->with('success', 'Email sent Successfuly');
     }
 }
