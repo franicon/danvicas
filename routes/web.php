@@ -1,10 +1,10 @@
 <?php
 
-use App\Http\Controllers\QuoteController;
 use App\Models\Insight;
 use App\Models\Project;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\QuoteController;
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\InsightController;
@@ -12,6 +12,7 @@ use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\AdminInsightController;
 use App\Http\Controllers\AdminServiceController;
 use App\Http\Controllers\AdminProjectController;
+use App\Http\Controllers\AdminTestimonialController;
 
 Route::get('/', function () {
     return view('home', [
@@ -74,6 +75,14 @@ Route::get('admin/projects/create', [AdminProjectController::class, 'create'])->
 Route::patch('admin/projects/{project:id}', [AdminProjectController::class, 'update'])->middleware('admin');
 Route::delete('admin/projects/{project:id}', [AdminProjectController::class, 'destroy'])->middleware('admin');
 Route::get('admin/projects/{project:id}/edit', [AdminProjectController::class, 'edit'])->middleware('admin');
+
+// Admin Projects
+Route::get('admin/testimonials', [AdminTestimonialController::class, 'index'])->middleware('admin');
+Route::post('admin/testimonials', [AdminTestimonialController::class, 'store'])->middleware('admin');
+Route::get('admin/testimonials/create', [AdminTestimonialController::class, 'create'])->middleware('admin');
+Route::patch('admin/testimonials/{testimonial:id}', [AdminTestimonialController::class, 'update'])->middleware('admin');
+Route::delete('admin/testimonials/{testimonial:id}', [AdminTestimonialController::class, 'destroy'])->middleware('admin');
+Route::get('admin/testimonials/{testimonial:id}/edit', [AdminTestimonialController::class, 'edit'])->middleware('admin');
 
 
 // Register

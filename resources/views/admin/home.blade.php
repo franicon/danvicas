@@ -32,6 +32,16 @@
                     <a href="admin/insights" class="btn btn-outline-primary">Edit Insights</a>
                 </div>
             </div>
+            <div class=" md:tw-px-10 tw-my-6 tw-px-3">
+                <div class="service-card-2 tw-border-[1.5px]">
+                    <img src="/img/insight.png" alt="" class="tw-w-16 mx-auto tw-mb-4">
+                    <h1 class="md:tw-text-2xl tw-text-xl tw-font-bold tw-text-blue-900">Testimonials</h1>
+                    <p class="md:tw-text-[15px] tw-text-[14px] tw-font-semibold">
+                        Add, Update, Delete Testimonial.
+                    </p>
+                    <a href="admin/testimonials" class="btn btn-outline-primary">Edit Testimonial</a>
+                </div>
+            </div>
         </div>
     </div>
 @endsection
