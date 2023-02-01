@@ -25,16 +25,16 @@
             <div class="tw-text-gray-100 tw-font-light md:tw-mx-auto md:tw-pb-0 tw-pb-6 ">
                 <div class="tw-text-lg tw-mt-1">Quick Links</div>
                 <div class="tw-text-sm tw-mt-3">
-                    <a href="/about" class="tw-no-underline">About</a>
+                    <a href="/about" class="tw-no-underline tw-text-gray-100">About</a>
                 </div>
                 <div class="tw-text-sm tw-mt-3">
-                    <a href="/services" class="tw-no-underline">Service</a>
+                    <a href="/services" class="tw-no-underline tw-text-gray-100">Service</a>
                 </div>
                 <div class="tw-text-sm tw-mt-3">
-                    <a href="/projects" class="tw-no-underline">Project</a>
+                    <a href="/projects" class="tw-no-underline tw-text-gray-100">Project</a>
                 </div>
                 <div class="tw-text-sm tw-mt-3">
-                    <a href="/insights" class="tw-no-underline">Insights</a>
+                    <a href="/insights" class="tw-no-underline tw-text-gray-100">Insights</a>
                 </div>
             </div>
             <div class="tw-text-gray-100 tw-font-light md:tw-mx-auto ">

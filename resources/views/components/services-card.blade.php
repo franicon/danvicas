@@ -9,21 +9,21 @@
     <div class="tw-grid tw-gap-4 tw-grid-cols-1 md:tw-grid-cols-2 lg:tw-grid-cols-3 tw-mt-20 text-center">
         <div class="md:tw-my-12 tw-my-6 px-lg-4">
             <div class="service-card tw-border-b-white">
-                <img src="/img/vector.png" alt="" class="tw-w-20 mx-auto tw-mb-4">
+                <img src="/img/project.png" alt="" class="tw-w-20 mx-auto tw-mb-4">
                 <h1 class="tw-text-xl">Design and Build</h1>
                 <p class="md:tw-text-[15px] tw-text-[15px] ">Danvicas’s design/build services provide an integrated approach that is focused on the specific needs of your project.</p>
             </div>
         </div>
         <div class="md:tw-my-12 tw-my-6 px-lg-4">
             <div class="service-card tw-border-b-white">
-                <img src="/img/vector.png" alt="" class="tw-w-20 mx-auto tw-mb-4">
+                <img src="/img/customer-support.png" alt="" class="tw-w-20 mx-auto tw-mb-4">
                 <h1 class="tw-text-xl">Construction</h1>
                 <p class="md:tw-text-[15px] tw-text-[15px] ">As your Construction Manager in Nigeria, we serve as your advisor through each stage of the building process.</p>
             </div>
         </div>
         <div class="md:tw-my-12 tw-my-6 px-lg-4">
             <div class="service-card tw-border-b-white">
-                <img src="/img/vector.png" alt="" class="tw-w-20 mx-auto tw-mb-4">
+                <img src="/img/insight.png" alt="" class="tw-w-20 mx-auto tw-mb-4">
                 <h1 class="tw-text-xl">Project Management</h1>
                 <p class="md:tw-text-[15px] tw-text-[15px] ">As your project manager in Nigeria, we understand the planning, design and construction of a project from a start to finish.</p>
             </div>
