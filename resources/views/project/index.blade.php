@@ -36,7 +36,7 @@
                     feedback we got from our clients
                 </div>
             </div>
-            <div class="tw-grid tw-grid-cols-4">
+            <div class="tw-grid tw-grid-cols-2">
                 @foreach($testimonials as  $testimonial)
                     <x-testimonials :testimonial="$testimonial"/>
                 @endforeach
