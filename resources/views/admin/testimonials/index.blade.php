@@ -2,7 +2,7 @@
 @section('content')
     <div class=" mx-auto">
         <section class="container tw-py-10">
-            <div class="row justify-content-center g-3 mt-5" method="POST" action="/admin/services" enctype="multipart/form-data">
+            <div class="row justify-content-center g-3 mt-5" method="POST" action="/admin/testimonials" enctype="multipart/form-data">
                 <div class="col-12">
                     <h3 class="tw-font-bold">Publish New Service</h3>
                 </div>
@@ -10,23 +10,23 @@
                 <div class="col-md-2">
                     <div class="tw-text-xl tw-mb-6 tw-font-bold">Links</div>
                     <div class="tw-pb-3">
-                        <a  class="{{request()->is('admin/services') ? 'py-2 tw-font-semibold tw-text-[17px] tw-no-underline' : 'tw-no-underline tw-text-[17px] tw-text-stone-800'}}" href="">All Services</a>
+                        <a  class="{{request()->is('admin/testimonials') ? 'py-2 tw-font-semibold tw-text-[17px] tw-no-underline' : 'tw-no-underline tw-text-[17px] tw-text-stone-800'}}" href="">All testimonials</a>
                     </div>
                     <div class="tw-pb-3">
-                        <a  class="{{request()->is('admin/services/create') ? 'tw-font-semibold tw-text-[17px] py-2 tw-no-underline' : 'tw-no-underline tw-text-[17px] tw-text-stone-800'}}"
-                            href="/admin/services/create">New Service</a>
+                        <a  class="{{request()->is('admin/testimonials/create') ? 'tw-font-semibold tw-text-[17px] py-2 tw-no-underline' : 'tw-no-underline tw-text-[17px] tw-text-stone-800'}}"
+                            href="/admin/testimonials/create">New Service</a>
                     </div>
                 </div>
                 <div class="col-md-10 tw-border-[1.5px] tw-rounded-3xl py-4">
                     <div class="px-3">
                         <div class="tw-text-xl mb-4">
-                           All Services
+                           All testimonials
                         </div>
                     </div>
                     <div class="row">
-                        @foreach($services as $service)
+                        @foreach($testimonials as $service)
                             <!-- Modal -->
-                            <form method="POST" action="/admin/services/{{$service->id}}" class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <form method="POST" action="/admin/testimonials/{{$service->id}}" class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 @csrf
                                 @method('DELETE')
                                 <div class="modal-dialog">
@@ -57,17 +57,17 @@
                                         <div class="tw-text-md">{{$service->title}}</div>
                                         <div class="tw-flex tw-justify-between">
                                             <div class="pt-2">
-                                                <a href="/services" class="tw-no-underline">view</a>
+                                                <a href="/testimonials" class="tw-no-underline">view</a>
                                             </div>
                                             <div class="pt-2">
-                                                <a href="/admin/services/{{$service->id}}/edit" class="tw-no-underline">edit</a>
+                                                <a href="/admin/testimonials/{{$service->id}}/edit" class="tw-no-underline">edit</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         @endforeach
-                        <div class="">{{$services->links()}}</div>
+                        <div class="">{{$testimonials->links()}}</div>
                     </div>
                 </div>
             </div>

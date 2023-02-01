@@ -25,14 +25,14 @@
                 <div class="px-3">
                     <div class="form-floating mb-4">
                         <input type="email" name="email" required class="form-control" id="email" placeholder="name@example.com">
-                        <label for="email">Enter Email Address</label>
+                        <label for="email">Enter Email </label>
                         @error('email')
                         <p class="text-danger tw-py-4">{{$message}}</p>
                         @enderror
                     </div>
                     <div class="form-floating mb-4">
                         <input type="password"  name="password" required class="form-control" id="password" placeholder="password">
-                        <label for="password">Choose password</label>
+                        <label for="password">Enter password</label>
                         @error('password')
                         <p class="text-danger tw-py-4">{{$message}}</p>
                         @enderror
