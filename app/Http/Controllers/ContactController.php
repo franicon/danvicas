@@ -11,7 +11,7 @@ class ContactController extends Controller {
     public function __invoke (Request $req) {
 
         $mailData = [
-            'name' => $req->first_name,
+            'name' => $req->name,
             'email' => $req->email,
             'message' => $req->message
         ];

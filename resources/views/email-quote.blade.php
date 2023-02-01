@@ -39,7 +39,7 @@
                 <table width="100%">
                     <tr>
                         <td style="text-align: center;">
-                            <p style="font-weight: 600; font-size: 20px; line-height: 25px;">Quotation Request</p>
+                            <p style="font-weight: 600; font-size: 20px; line-height: 25px;">Quotation Request Mail</p>
                         </td>
                     </tr>
                 </table>
