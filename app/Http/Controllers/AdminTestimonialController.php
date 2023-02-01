@@ -27,8 +27,7 @@ class AdminTestimonialController extends Controller {
             'image' => 'required',
             'body' => 'required'
         ]);
-
-        $attributes['image'] = Storage::disk('public')->putFile('/public/img', request()->file('image'));
+        $attributes['image'] = request()->file('image')->store('img');
 
         Testimonial::create($attributes);
 
@@ -43,7 +42,7 @@ class AdminTestimonialController extends Controller {
         ]);
 
         if (isset($attributes['image'])) {
-            $attributes['image'] = Storage::disk('public')->putFile('/public/img', request()->file('image'));
+            $attributes['image'] = request()->file('image')->store('img');
         }
         $testimonial->update($attributes);
 

@@ -29,7 +29,9 @@ class AdminServiceController extends Controller {
             'body' => 'required'
         ]);
 
-        $attributes['image'] = Storage::disk('public')->putFile('/public/img', request()->file('image'));
+        $attributes['image'] = request()->file('image')->store('img');
+
+
 
         Service::create($attributes);
 
@@ -44,7 +46,7 @@ class AdminServiceController extends Controller {
         ]);
 
         if (isset($attributes['image'])) {
-            $attributes['image'] = Storage::disk('public')->putFile('/public/img', request()->file('image'));
+            $attributes['image'] = request()->file('image')->store('img');
         }
         $service->update($attributes);
 

@@ -32,9 +32,9 @@ class AdminProjectController extends Controller {
             'img_2' => 'image',
         ]);
 
-        $attributes['thumbnail'] = Storage::disk('public')->putFile('/public/img', request()->file('thumbnail'));
-        $attributes['img_1'] = Storage::disk('public')->putFile('/public/img', request()->file('img_1'));
-        $attributes['img_2'] = Storage::disk('public')->putFile('/public/img', request()->file('img_2'));
+        $attributes['thumbnail'] = request()->file('thumbnail')->store('img');
+        $attributes['img_1'] = request()->file('img_1')->store('img');
+        $attributes['img_2'] = request()->file('img_2')->store('img');
 
         Project::create($attributes);
 

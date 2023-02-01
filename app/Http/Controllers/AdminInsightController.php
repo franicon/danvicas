@@ -28,7 +28,8 @@ class AdminInsightController extends Controller {
             'second_body' => 'required |min:5'
         ]);
 
-        $attributes['thumbnail'] = Storage::disk('public')->putFile('/public/img', request()->file('thumbnail'));
+        $attributes['thumbnail'] = request()->file('thumbnail')->store('img');
+
 
         Insight::create($attributes);
 
@@ -49,7 +50,7 @@ class AdminInsightController extends Controller {
         ]);
 
         if (isset($attributes['thumbnail'])) {
-            $attributes['thumbnail'] = Storage::disk('public')->putFile('/public/img', request()->file('thumbnail'));
+            $attributes['thumbnail'] = request()->file('thumbnail')->store('img');
         }
         $insight->update($attributes);
 
